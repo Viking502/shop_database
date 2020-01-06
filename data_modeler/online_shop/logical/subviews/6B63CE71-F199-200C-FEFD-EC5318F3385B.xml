@@ -14,9 +14,17 @@
 <display>false</display>
 <notation>1</notation>
 <objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="193D24F0-D9DF-E473-DFF4-8CA23B9A693D" otype="Entity" vid="B8525588-FA9E-1D85-E88D-5CF8FF9ED119">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="996" y="408" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="1FF4747C-610D-8F62-9736-51FF8FFED118" otype="Entity" vid="989961B1-7DF1-356C-AB25-947A1613D79E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1038" y="160" width="111" height="82"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="273B95B0-D9D2-9B50-674A-709C92061FEA" otype="Entity" vid="76356210-A285-2957-AE49-5739567C57AC">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="940" y="142" width="170" height="110"/>
+<bounds x="889" y="28" width="270" height="224"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="374F0174-9157-8988-D056-C49D0D6A0496" otype="Entity" vid="43489471-BE25-869E-D1B6-0F8C800E91E0">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -24,23 +32,27 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="43299F89-68B2-9551-7A50-C634B6DE417D" otype="Entity" vid="EA3E7BF8-55EB-A4B1-09AD-1A5C25F42070">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="990" y="403" width="170" height="110"/>
+<bounds x="1083" y="270" width="170" height="110"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="9E431B2A-F091-7C71-968D-E56A7BEC666E" otype="Entity" vid="9110743D-E955-3570-7DA0-533D4989518F">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="33" y="165" width="170" height="110"/>
+<bounds x="108" y="189" width="170" height="110"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="B6E60A69-4C4A-A959-8D5D-99E5E2E8AD8F" otype="Entity" vid="0681E6FD-9F7C-6B0B-3A95-04B0E645152E">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="945" y="258" width="170" height="125"/>
+<bounds x="901" y="262" width="170" height="125"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="D06DBA17-451D-00A8-2EF6-B4B36D6C064E" otype="Entity" vid="72B2D8F0-B730-4A94-C583-3BABE2B29B9A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="426" y="260" width="170" height="110"/>
+<bounds x="368" y="262" width="170" height="110"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="E7B28989-2793-1B1C-4E35-4D1088BB19BF" otype="Entity" vid="25680AF0-5FA6-7363-7164-E8F6B24BA297">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="120" y="53" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="E873CD6F-8B7D-1B43-B69A-A9F475A779CA" otype="Entity" vid="FA56CCE1-8BD7-79A8-0383-56BEB194D062">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="901" y="158" width="128" height="84"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="E9B05CCC-0D10-AF7C-BD43-7EEB1BBB9E4F" otype="Entity" vid="B26DAE28-E7F0-A496-9DE3-AD2C42EC66C8">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -51,4 +63,16 @@
 <bounds x="629" y="262" width="170" height="110"/>
 </OView>
 </objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVInheritanceRelation" oid="2CAACD58-ABA6-F98D-31E7-8EE261AEA8C9" otype="Hierarchy relation" vid_source="76356210-A285-2957-AE49-5739567C57AC" vid_target="FA56CCE1-8BD7-79A8-0383-56BEB194D062">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-65536</backgroundColor>
+<lineWidth>1</lineWidth>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVInheritanceRelation" oid="3DC83262-C290-6ECB-BCD6-61D1CEB92FAD" otype="Hierarchy relation" vid_source="76356210-A285-2957-AE49-5739567C57AC" vid_target="989961B1-7DF1-356C-AB25-947A1613D79E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-65536</backgroundColor>
+<lineWidth>1</lineWidth>
+</Connector>
+</connectors>
 </Diagram>

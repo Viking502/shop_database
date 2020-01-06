@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E9B05CCC-0D10-AF7C-BD43-7EEB1BBB9E4F" name="Product_price">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1FF4747C-610D-8F62-9736-51FF8FFED118" name="Client">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-06 15:28:57 UTC</createdTime>
+<createdTime>2020-01-06 16:43:01 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
@@ -11,25 +11,14 @@
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
 <growthPercent>0</growthPercent>
 <growthType>Year</growthType>
+<hierarchicalParent>273B95B0-D9D2-9B50-674A-709C92061FEA</hierarchicalParent>
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="price" id="CC56405F-3A4B-CE54-FCCE-10A187476C90">
+<Attribute name="register_date" id="FA8B23C7-87B1-BCE1-AD06-1FF1A25EDB9B">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-06 15:29:26 UTC</createdTime>
-<ownerDesignName>online_shop</ownerDesignName>
-<engineerTo>
-<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
-</engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT043</logicalDatatype>
-<domain>368596AB-3967-D6C7-6F83-9BDD06EB86CC</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="valid_from" id="64829037-EB0E-2DB6-EDD6-C82483DF3225">
-<createdBy>viking</createdBy>
-<createdTime>2020-01-06 15:30:50 UTC</createdTime>
+<createdTime>2020-01-06 16:50:03 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
@@ -39,17 +28,16 @@
 <domain>4272F224-5F7E-90F1-F7F2-9661CE8A5F16</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="valid_to" id="C3413095-5243-2233-2F98-2413A89C17D4">
+<Attribute name="policy_accepted" id="F9D54AF4-D5F6-A1DA-0BFE-7E5FB7254026">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-06 15:31:32 UTC</createdTime>
+<createdTime>2020-01-06 16:50:15 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <use>0</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<domain>4272F224-5F7E-90F1-F7F2-9661CE8A5F16</domain>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>02677793-D51D-C3AA-1AEC-1D442DBF4FCD</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

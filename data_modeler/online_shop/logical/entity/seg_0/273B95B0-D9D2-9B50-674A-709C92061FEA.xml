@@ -75,30 +75,6 @@
 <domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="register_date" id="B30F4969-D00A-BC52-D7DA-747E7CC04BFB">
-<createdBy>viking</createdBy>
-<createdTime>2020-01-06 15:17:38 UTC</createdTime>
-<ownerDesignName>online_shop</ownerDesignName>
-<engineerTo>
-<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
-</engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<domain>4272F224-5F7E-90F1-F7F2-9661CE8A5F16</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="policy_accepted" id="74C6EDE6-2FEB-D9F7-1F5F-186076D1E026">
-<createdBy>viking</createdBy>
-<createdTime>2020-01-06 15:18:42 UTC</createdTime>
-<ownerDesignName>online_shop</ownerDesignName>
-<engineerTo>
-<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
-</engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<domain>02677793-D51D-C3AA-1AEC-1D442DBF4FCD</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="717F01C7-8319-C31F-7669-6ECB659F38E3" name="Users PK">
