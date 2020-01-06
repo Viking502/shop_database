@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="online_shop" id="0ED54CCA-9C4B-9568-A5EC-1BC9F52649FE" version="3.5">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 15:13:14 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>0ED54CCA-9C4B-9568-A5EC-1BC9F52649FE</designId>
+</OSDM_Design>
