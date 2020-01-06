@@ -25,6 +25,14 @@
 <fileName>defaultdomains</fileName>
 <logicalDatatype>LOGDT008</logicalDatatype>
 </Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="float" id="A99D4FDE-7872-1C80-FE51-2289D0824490">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 15:57:09 UTC</createdTime>
+<ownerDesignName>System</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>defaultdomains</fileName>
+<logicalDatatype>LOGDT021</logicalDatatype>
+</Domain>
 <Domain class="oracle.dbtools.crest.model.design.Domain" name="int" id="BBD81238-F321-3E9F-A826-93FEF0D73652">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-06 15:22:40 UTC</createdTime>

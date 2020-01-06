@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E7B28989-2793-1B1C-4E35-4D1088BB19BF" name="Transaction">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="43299F89-68B2-9551-7A50-C634B6DE417D" name="Conversation">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-06 15:31:58 UTC</createdTime>
+<createdTime>2020-01-06 16:09:16 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="1F8C3EAB-9CBA-A01B-8074-A9D39DD779DC">
+<Attribute name="id" id="D1276B19-36F1-0E3A-40B6-3B29044ED36E">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-06 15:32:18 UTC</createdTime>
+<createdTime>2020-01-06 16:10:30 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
@@ -27,9 +27,9 @@
 <domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="date" id="7296BB8B-7AD0-7F09-404D-1091C9AE8297">
+<Attribute name="date" id="E0F29C94-8718-CEDD-921A-FB16051A6438">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-06 15:56:06 UTC</createdTime>
+<createdTime>2020-01-06 16:10:38 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
@@ -39,31 +39,42 @@
 <domain>4272F224-5F7E-90F1-F7F2-9661CE8A5F16</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="payment_date" id="F22E7D05-5DC4-50D8-BE85-32E71D7CC5FF">
+<Attribute name="message" id="4DB3AEDF-F6F6-06F3-56A2-3F7ED86C1552">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-06 16:07:21 UTC</createdTime>
+<createdTime>2020-01-06 16:11:13 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <use>0</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<domain>4272F224-5F7E-90F1-F7F2-9661CE8A5F16</domain>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="send_by_client" id="DE1E3AD3-268E-AE6B-C733-D99946BFA1FD">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 16:11:42 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>02677793-D51D-C3AA-1AEC-1D442DBF4FCD</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="6B6494EB-BD7E-C41A-4B99-B0E28AC6B670" name="Transaction PK">
+<identifier id="6AAED490-ED6B-17EB-51EE-EA8CAB2623F2" name="Conversation PK">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-06 15:32:24 UTC</createdTime>
+<createdTime>2020-01-06 16:10:36 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>1F8C3EAB-9CBA-A01B-8074-A9D39DD779DC</attributeRef>
+<attributeRef>D1276B19-36F1-0E3A-40B6-3B29044ED36E</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

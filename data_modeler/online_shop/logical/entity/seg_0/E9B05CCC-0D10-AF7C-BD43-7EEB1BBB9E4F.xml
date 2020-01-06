@@ -23,8 +23,8 @@
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
 </engineerTo>
 <use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>A99D4FDE-7872-1C80-FE51-2289D0824490</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="valid_from" id="64829037-EB0E-2DB6-EDD6-C82483DF3225">
