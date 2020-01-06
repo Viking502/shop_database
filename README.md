@@ -1,3 +1,6 @@
-# shop_database
+# Online Shop Database
 
-![logical_diagram](data_modeler/logical_diagram.pdf)
+### Entity diagram
+![entity_diagram](data_modeler/logical_diagram.png)
+
+![pdf entity diagram](data_modeler/logical_diagram.pdf)
