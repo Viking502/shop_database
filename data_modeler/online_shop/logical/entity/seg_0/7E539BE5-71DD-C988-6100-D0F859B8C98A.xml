@@ -78,6 +78,34 @@
 <domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id2" id="4F0DC567-C25A-C45F-39B0-56610FA6394C">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:24:05 UTC</createdTime>
+<generatorID>94AF3B95-61EA-D5E4-70B0-0CA680720A5F</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<referedAttribute>462CD7DF-5770-2870-6A52-0F5A51CA717A</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id3" id="B2130DFF-FB85-F66F-9D0F-E63828D7D77E">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:26:51 UTC</createdTime>
+<generatorID>BACDEF5B-08ED-0DEE-9BE8-EECE4DC889B0</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<referedAttribute>77075B66-5ED5-464F-FA05-8FE4F495BCB1</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="2C5B06DE-24FA-6899-769F-1D0FEEA4F07D" name="Message PK">
@@ -91,6 +119,8 @@
 <usedAttributes>
 <attributeRef>1E0069F2-A74B-306F-8591-DF29F3FE1AF6</attributeRef>
 <attributeRef>2E49E532-3ECA-9CF3-7F16-14071511A44C</attributeRef>
+<attributeRef>4F0DC567-C25A-C45F-39B0-56610FA6394C</attributeRef>
+<attributeRef>B2130DFF-FB85-F66F-9D0F-E63828D7D77E</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

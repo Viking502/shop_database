@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C664CDAD-8539-5292-8DEC-AAC122AB0D40" name="Product_price">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>E9B05CCC-0D10-AF7C-BD43-7EEB1BBB9E4F</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="price" id="C3439EF1-10E9-B890-4A97-45D79E907BF1">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>CC56405F-3A4B-CE54-FCCE-10A187476C90</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>368596AB-3967-D6C7-6F83-9BDD06EB86CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valid_from" id="0010CEBF-9E35-B14B-2D94-9B56F761ECD7">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>64829037-EB0E-2DB6-EDD6-C82483DF3225</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>4272F224-5F7E-90F1-F7F2-9661CE8A5F16</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valid_to" id="3B8B15AA-6C59-2E3F-C5F2-5D4F49252565">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>C3413095-5243-2233-2F98-2413A89C17D4</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>4272F224-5F7E-90F1-F7F2-9661CE8A5F16</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Product_id" id="43C6E7C7-4DB5-DB94-C85A-F08ADE5916FF">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>FC432458-CE8B-5D9E-C683-EAD23FF09C5B</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D8A31D87-9001-912A-7F65-37FF7B7E66AD" referredColumn="7E7F7ED4-3D2E-CA54-9935-EEB06EB192B8"/>
+</associations>
+</Column>
+<Column name="Product_Product_category_id" id="9EE68ED6-23A4-8D83-8BCF-F7189E7DDC0F">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>C47B2F6E-9CEA-AFE4-2A87-20CB6A4D9293</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D8A31D87-9001-912A-7F65-37FF7B7E66AD" referredColumn="9D1A37AA-3CB7-CA76-5D93-CA5858330254"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="30A4CC88-9A1C-F3A1-D065-D4E2AF5C08E8" name="Product_price_PK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>94194749-37FB-9266-ACAD-A3522BA50C1B</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43C6E7C7-4DB5-DB94-C85A-F08ADE5916FF"/>
+<colUsage columnID="9EE68ED6-23A4-8D83-8BCF-F7189E7DDC0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B6A0D85F-755F-3520-2EE1-42E84DE2D9D5" name="Product_price_Product_FK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>868B44AA-89C2-48C3-3908-799A0C266A89</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43C6E7C7-4DB5-DB94-C85A-F08ADE5916FF"/>
+<colUsage columnID="9EE68ED6-23A4-8D83-8BCF-F7189E7DDC0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

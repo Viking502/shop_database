@@ -66,6 +66,20 @@
 <domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id2" id="462CD7DF-5770-2870-6A52-0F5A51CA717A">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:24:05 UTC</createdTime>
+<generatorID>B7468127-CFCC-5B64-D0D3-83E20DF743F1</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<referedAttribute>77075B66-5ED5-464F-FA05-8FE4F495BCB1</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="6AAED490-ED6B-17EB-51EE-EA8CAB2623F2" name="Conversation PK">
@@ -78,6 +92,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>D1276B19-36F1-0E3A-40B6-3B29044ED36E</attributeRef>
+<attributeRef>462CD7DF-5770-2870-6A52-0F5A51CA717A</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
