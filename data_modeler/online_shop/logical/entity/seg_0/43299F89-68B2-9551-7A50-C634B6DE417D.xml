@@ -27,9 +27,9 @@
 <domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="date" id="E0F29C94-8718-CEDD-921A-FB16051A6438">
+<Attribute name="start_date" id="8441DFD1-608F-DC27-1C23-573649365011">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-06 16:10:38 UTC</createdTime>
+<createdTime>2020-01-11 15:53:46 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
@@ -39,28 +39,31 @@
 <domain>4272F224-5F7E-90F1-F7F2-9661CE8A5F16</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="message" id="4DB3AEDF-F6F6-06F3-56A2-3F7ED86C1552">
+<Attribute name="is_closed" id="92B5C25D-B3C6-7269-DD95-7F1C147F50B2">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-06 16:11:13 UTC</createdTime>
+<createdTime>2020-01-11 15:54:03 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
 </engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="send_by_client" id="DE1E3AD3-268E-AE6B-C733-D99946BFA1FD">
-<createdBy>viking</createdBy>
-<createdTime>2020-01-06 16:11:42 UTC</createdTime>
-<ownerDesignName>online_shop</ownerDesignName>
-<engineerTo>
-<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
-</engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
 <domain>02677793-D51D-C3AA-1AEC-1D442DBF4FCD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="6E9BEF78-6D3B-A0F1-588D-31BE444C3FA5">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:08:38 UTC</createdTime>
+<generatorID>D33C5CEB-B1BA-AE6B-5D20-64E2B2AF84EC</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<referedAttribute>D2463E5E-7508-2CF1-730D-13DFF1EA2723</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

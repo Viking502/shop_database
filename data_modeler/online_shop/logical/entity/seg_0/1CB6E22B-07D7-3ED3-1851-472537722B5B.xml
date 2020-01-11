@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9E431B2A-F091-7C71-968D-E56A7BEC666E" name="Transaction_history">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1CB6E22B-07D7-3ED3-1851-472537722B5B" name="conversation_categorie">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-06 16:04:33 UTC</createdTime>
+<createdTime>2020-01-11 16:02:46 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="8176F76D-0AE4-DDFF-7A13-42C497734082">
+<Attribute name="id" id="D2463E5E-7508-2CF1-730D-13DFF1EA2723">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-06 16:04:47 UTC</createdTime>
+<createdTime>2020-01-11 16:03:03 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
@@ -27,9 +27,9 @@
 <domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="status" id="C4A11E24-5B40-9E87-6060-A58D14C5AC70">
+<Attribute name="name" id="881CDAFF-25FD-22B1-FC4C-86345D3FD141">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-06 16:04:55 UTC</createdTime>
+<createdTime>2020-01-11 16:03:36 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
@@ -39,40 +39,13 @@
 <domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="date" id="4EEF438C-06D4-9623-7D58-677C4EF9BBD0">
+<Attribute name="priority" id="59D56FD7-9223-EC18-B022-E317E771A5D4">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-06 16:05:19 UTC</createdTime>
+<createdTime>2020-01-11 16:04:29 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
 </engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<domain>4272F224-5F7E-90F1-F7F2-9661CE8A5F16</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="note" id="F70AA3AC-39CD-72CD-CE7B-26C63057F7A1">
-<createdBy>viking</createdBy>
-<createdTime>2020-01-06 16:05:25 UTC</createdTime>
-<ownerDesignName>online_shop</ownerDesignName>
-<engineerTo>
-<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id1" id="348D14E3-C67C-B193-97A3-A9536635A873">
-<createdBy>viking</createdBy>
-<createdTime>2020-01-11 15:10:05 UTC</createdTime>
-<generatorID>3ED2EA1A-0C48-5DF5-3A4C-7CCAD2E7BAF4</generatorID>
-<ownerDesignName>online_shop</ownerDesignName>
-<engineerTo>
-<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
-</engineerTo>
-<referedAttribute>1F8C3EAB-9CBA-A01B-8074-A9D39DD779DC</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
@@ -80,17 +53,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="3FBAB8B6-3C12-E09A-5FEA-4E9D0D0E8D54" name="Transaction_history PK">
+<identifier id="8FCFC48F-0272-01F4-A9CE-B6D7BDA6DCA9" name="conversation_categorie PK">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-06 16:04:58 UTC</createdTime>
+<createdTime>2020-01-11 16:03:34 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>8176F76D-0AE4-DDFF-7A13-42C497734082</attributeRef>
-<attributeRef>348D14E3-C67C-B193-97A3-A9536635A873</attributeRef>
+<attributeRef>D2463E5E-7508-2CF1-730D-13DFF1EA2723</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

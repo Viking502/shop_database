@@ -76,6 +76,34 @@
 <domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id1" id="9FB878C2-2B67-29D8-5E2C-E7F24615ED19">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:22:32 UTC</createdTime>
+<generatorID>72563AAA-9469-2BEA-61E3-8F1F4F5C214E</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<referedAttribute>4D314C85-5A09-823B-AF69-C68D5AD08911</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="42415A9B-1A98-55D1-869B-0D590D3310B8">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:22:32 UTC</createdTime>
+<generatorID>72563AAA-9469-2BEA-61E3-8F1F4F5C214E</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<referedAttribute>C9FE6EFD-8A61-4625-3531-8A888A654878</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="187DF4B1-D695-9C67-45A3-016F57804251" name="Product_image PK">
@@ -88,6 +116,8 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>1E0DE0A9-3A9C-D227-16C5-FAF35C813ECA</attributeRef>
+<attributeRef>9FB878C2-2B67-29D8-5E2C-E7F24615ED19</attributeRef>
+<attributeRef>42415A9B-1A98-55D1-869B-0D590D3310B8</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
