@@ -141,7 +141,9 @@ CREATE TABLE "Order"
      id INTEGER NOT NULL , 
      date DATETIME NOT NULL , 
      payment_date DATETIME ,
-     CONSTRAINT OrderPK PRIMARY KEY (id)
+	 client_id INTEGER NOT NULL ,
+     CONSTRAINT OrderPK PRIMARY KEY (id) ,
+	 CONSTRAINT OrderFKClient FOREIGN KEY (client_id) REFERENCES Client(user_id)
     )
 GO
 
