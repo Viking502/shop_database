@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="43299F89-68B2-9551-7A50-C634B6DE417D" name="Conversation">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 16:09:16 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="D1276B19-36F1-0E3A-40B6-3B29044ED36E">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 16:10:30 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="start_date" id="8441DFD1-608F-DC27-1C23-573649365011">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:53:46 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>4272F224-5F7E-90F1-F7F2-9661CE8A5F16</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="is_closed" id="92B5C25D-B3C6-7269-DD95-7F1C147F50B2">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:54:03 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>02677793-D51D-C3AA-1AEC-1D442DBF4FCD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="6E9BEF78-6D3B-A0F1-588D-31BE444C3FA5">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:08:38 UTC</createdTime>
+<generatorID>D33C5CEB-B1BA-AE6B-5D20-64E2B2AF84EC</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<referedAttribute>D2463E5E-7508-2CF1-730D-13DFF1EA2723</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="2434117A-D1BF-D3D6-09FF-E5B0493212B7">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-16 09:23:23 UTC</createdTime>
+<generatorID>3CD706CA-80FA-FBAA-51F6-B60C56AF2777</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<referedAttribute>77075B66-5ED5-464F-FA05-8FE4F495BCB1</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6AAED490-ED6B-17EB-51EE-EA8CAB2623F2" name="Conversation PK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 16:10:36 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D1276B19-36F1-0E3A-40B6-3B29044ED36E</attributeRef>
+<attributeRef>2434117A-D1BF-D3D6-09FF-E5B0493212B7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

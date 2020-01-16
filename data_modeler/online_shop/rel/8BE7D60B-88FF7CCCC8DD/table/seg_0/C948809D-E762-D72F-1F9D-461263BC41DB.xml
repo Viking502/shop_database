@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C948809D-E762-D72F-1F9D-461263BC41DB" name="Balance">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>FB2C5159-A3BF-CD48-D4E2-34F61F8F8E76</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="AF22B6B5-D6C2-7981-2A6C-F54B7661A67E">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>F378FC97-526C-DEF9-208E-1F96FD339C1E</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="month" id="406B0E46-9556-7264-F15A-665BEDC9630E">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>5092C06C-601E-402B-DFDF-F3742DFDEA88</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>4272F224-5F7E-90F1-F7F2-9661CE8A5F16</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="income" id="D26F8667-B100-6BE1-435B-CDACEECC5245">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>DCFAEBC3-2C00-3FDC-FC7B-E6ACF4B7F92A</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>368596AB-3967-D6C7-6F83-9BDD06EB86CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="expense" id="7E168C75-19EE-0962-AB2A-A97D32BB8D52">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>5A338917-DABF-F6B0-394A-BD8E9D4BD070</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>368596AB-3967-D6C7-6F83-9BDD06EB86CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="balance" id="9AFC41A6-FE26-CBC8-012B-EDAD4E88D100">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>7931EC5C-015A-FA9F-2FF0-8E3C406887C4</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>368596AB-3967-D6C7-6F83-9BDD06EB86CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C6A29009-49A5-D7AE-994E-688AB8296B28" name="Balance_PK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>EDA23FE4-C81A-9C3C-F9BF-708FD4C3FC74</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF22B6B5-D6C2-7981-2A6C-F54B7661A67E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1A683BF5-3615-4F24-C422-D9BBFC9AF2E0" name="conversation_categorie">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>1CB6E22B-07D7-3ED3-1851-472537722B5B</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="7A1F5A69-5B6B-DAE6-96BB-D53C00D6D3C6">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>D2463E5E-7508-2CF1-730D-13DFF1EA2723</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="019DC8B4-404A-2FB0-B1FE-2B10F87AB798">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>881CDAFF-25FD-22B1-FC4C-86345D3FD141</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="priority" id="8F5921A4-7B3B-CB5D-9015-C8603E0312DB">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>59D56FD7-9223-EC18-B022-E317E771A5D4</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="84467191-9D28-A460-1A66-491218206A06" name="conversation_categorie_PK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>8FCFC48F-0272-01F4-A9CE-B6D7BDA6DCA9</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A1F5A69-5B6B-DAE6-96BB-D53C00D6D3C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

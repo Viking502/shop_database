@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8BBC334F-04CD-43FE-96FF-0C578002F274" name="Attachment">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:58:22 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="7AA5BA97-70EB-FE86-9A7F-196ABEC67CAA">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:58:47 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="url" id="8E0A8B94-5D14-F2FA-6963-483D185708E8">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:58:53 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="size" id="5525141D-9BB3-94F1-A3E8-CF69531FF8BE">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:59:11 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_type" id="83FBE3E8-B51B-7A76-A4A3-2320354E428F">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:59:20 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="F5978BE7-C1C6-4077-3D90-48081A583664">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:05:30 UTC</createdTime>
+<generatorID>18C3361B-01F2-C05D-4A96-39D4F42D51EC</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<referedAttribute>1E0069F2-A74B-306F-8591-DF29F3FE1AF6</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id11" id="73938DCC-F62F-35A8-215D-9B7305005329">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:05:30 UTC</createdTime>
+<generatorID>18C3361B-01F2-C05D-4A96-39D4F42D51EC</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<referedAttribute>2E49E532-3ECA-9CF3-7F16-14071511A44C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="B6F1CD77-2C6B-67A6-6B7F-7AB14B4BD75E">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-16 09:23:23 UTC</createdTime>
+<generatorID>18C3361B-01F2-C05D-4A96-39D4F42D51EC</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<referedAttribute>0221FCCD-72EF-5A51-9065-784117A2CB76</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D833C504-11B2-FA2B-66E5-89BA2A00C270" name="Attachment PK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:58:51 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7AA5BA97-70EB-FE86-9A7F-196ABEC67CAA</attributeRef>
+<attributeRef>F5978BE7-C1C6-4077-3D90-48081A583664</attributeRef>
+<attributeRef>73938DCC-F62F-35A8-215D-9B7305005329</attributeRef>
+<attributeRef>B6F1CD77-2C6B-67A6-6B7F-7AB14B4BD75E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

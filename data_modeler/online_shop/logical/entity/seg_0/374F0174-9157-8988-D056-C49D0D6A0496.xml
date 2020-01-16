@@ -39,6 +39,48 @@
 <domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id1" id="CE6C24DA-7647-EAE5-EB8D-853E57CC43E8">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:21:07 UTC</createdTime>
+<generatorID>9921AE3A-3C7E-044F-C576-154309704A4C</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<referedAttribute>A2D6C8E4-4B63-4A2B-8B4A-9F5E26F58B18</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id11" id="A41F2E1C-DCDD-BDC2-EF7F-75D487699683">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:21:07 UTC</createdTime>
+<generatorID>9921AE3A-3C7E-044F-C576-154309704A4C</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<referedAttribute>44D0C433-8F16-AAAC-39C0-F1F29ABD023B</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="C9FE6EFD-8A61-4625-3531-8A888A654878">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:22:07 UTC</createdTime>
+<generatorID>8CBE0AD1-94CB-DE66-C322-C56841239786</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<referedAttribute>B55CA363-3977-5369-BC29-20A46E6DF3B6</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="7275BEF8-AA8C-7282-6182-F7EE04B8FCF3" name="product PK">
@@ -51,6 +93,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>4D314C85-5A09-823B-AF69-C68D5AD08911</attributeRef>
+<attributeRef>C9FE6EFD-8A61-4625-3531-8A888A654878</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

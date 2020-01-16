@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E5B74DC2-7A65-D88B-4432-342230C432DD" name="user_activity">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:01:52 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="27E3D5CB-F136-5957-65C6-0794B8A0F6C4">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:02:17 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="transactions_num" id="776CA18B-465C-7D7E-36DB-E2BB8F0272B3">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:02:24 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_login" id="0DA3268B-4D2A-E615-E1D8-33F2C1ED30C3">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:03:43 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>4272F224-5F7E-90F1-F7F2-9661CE8A5F16</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_expences" id="099FD1A7-A030-A463-344F-4EC24DABDCD4">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:04:32 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>368596AB-3967-D6C7-6F83-9BDD06EB86CC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="70B7B1A8-5CBE-7929-6C7B-410E056F1A50" name="user_logs PK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 15:02:23 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>27E3D5CB-F136-5957-65C6-0794B8A0F6C4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

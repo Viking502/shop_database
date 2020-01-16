@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6970ADF1-20F3-B967-926E-45463BEE0658" name="Client">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>1FF4747C-610D-8F62-9736-51FF8FFED118</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="122443B5-D0AB-1CB6-7C87-E0F194499000">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>77075B66-5ED5-464F-FA05-8FE4F495BCB1</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E2400828-A336-9E34-5535-E860D25459F0" referredColumn="FE36A26B-EEBA-E786-E31A-984DE4D052DA"/>
+</associations>
+</Column>
+<Column name="register_date" id="502D9911-990E-16AF-F7FA-2211C1FE02D2">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>FA8B23C7-87B1-BCE1-AD06-1FF1A25EDB9B</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>4272F224-5F7E-90F1-F7F2-9661CE8A5F16</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="policy_accepted" id="0C86D0F4-7DB1-88EB-2963-A35F50323B4B">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>F9D54AF4-D5F6-A1DA-0BFE-7E5FB7254026</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>02677793-D51D-C3AA-1AEC-1D442DBF4FCD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_activity_id" id="554D68BF-2E3D-798C-2F55-3FF579290227">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>308D4F5E-5753-1C13-9CCA-09CAAE68ECE3</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CFE2A468-DCA9-A584-FD41-B30BA2DC3999" referredColumn="D2F38B88-C089-A077-C5A1-90F1CD4B051B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8F8FEF83-561F-9F50-E93F-ECB0092F44F9" name="Client_PK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>717F01C7-8319-C31F-7669-6ECB659F38E3</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="122443B5-D0AB-1CB6-7C87-E0F194499000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A6F79DD-9ED8-BE6D-4083-809296488D26" name="Client_PKv1">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-16 09:26:12 UTC</createdTime>
+<generatorID>73674775-4857-B4CD-19ED-BBBA52E97BC7</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="EBA746D7-14BF-4A1A-F129-1F212B0789B8" name="Client__IDX">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>DB284D8E-E44C-E46F-DB5C-08463A790E38</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="554D68BF-2E3D-798C-2F55-3FF579290227"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FCD06B4-6D71-6645-3580-ECE4A6A74B9A" name="Client_Users_FK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>3DC83262-C290-6ECB-BCD6-61D1CEB92FAD</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="122443B5-D0AB-1CB6-7C87-E0F194499000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C428538C-365C-7178-4EF1-1F501A62A906" name="Client_user_activity_FK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-16 09:36:48 UTC</createdTime>
+<generatorID>DB284D8E-E44C-E46F-DB5C-08463A790E38</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="554D68BF-2E3D-798C-2F55-3FF579290227"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
