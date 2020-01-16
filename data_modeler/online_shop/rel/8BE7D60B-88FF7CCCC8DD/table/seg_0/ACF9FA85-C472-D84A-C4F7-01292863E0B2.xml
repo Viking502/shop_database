@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ACF9FA85-C472-D84A-C4F7-01292863E0B2" name="product">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 15:27:49 UTC</createdTime>
+<generatorID>374F0174-9157-8988-D056-C49D0D6A0496</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="7E7F7ED4-3D2E-CA54-9935-EEB06EB192B8">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 15:27:49 UTC</createdTime>
+<generatorID>4D314C85-5A09-823B-AF69-C68D5AD08911</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D9600FD8-928D-EB32-540C-DF4E0F810DF7" name="product_PK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 15:27:49 UTC</createdTime>
+<generatorID>7275BEF8-AA8C-7282-6182-F7EE04B8FCF3</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E7F7ED4-3D2E-CA54-9935-EEB06EB192B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

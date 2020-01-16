@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="034118E6-DE3D-C082-3851-390889164132" name="Users">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 15:27:49 UTC</createdTime>
+<generatorID>273B95B0-D9D2-9B50-674A-709C92061FEA</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="FE36A26B-EEBA-E786-E31A-984DE4D052DA">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 15:27:49 UTC</createdTime>
+<generatorID>77075B66-5ED5-464F-FA05-8FE4F495BCB1</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="754D350C-0F12-9BB3-C289-4C089DA85FCD">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 15:27:49 UTC</createdTime>
+<generatorID>BB2DA8F2-A7BB-841F-6465-8111EAF1E1F8</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="surname" id="C79560F9-BDC7-3617-A30B-D31671AF3DD3">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 15:27:49 UTC</createdTime>
+<generatorID>C2AE35EB-B4FA-56A9-F63E-DC8E797A0F91</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="5FA89F0C-79C7-985B-9D4D-783F58A1E686">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 15:27:49 UTC</createdTime>
+<generatorID>3910926A-5C28-1127-AD04-B9E45C7113A2</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="4E59B072-0823-407C-5CFB-C9729439E430">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 15:27:49 UTC</createdTime>
+<generatorID>D50E151D-34BA-D282-ED0B-76C645ABFA59</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="register_date" id="AB37D763-730F-5267-23D3-5DBBDCEAA3A6">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 15:27:49 UTC</createdTime>
+<generatorID>B30F4969-D00A-BC52-D7DA-747E7CC04BFB</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>4272F224-5F7E-90F1-F7F2-9661CE8A5F16</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="policy_accepted" id="C306FBE7-9FB2-6629-19A2-BFF15F7E6B38">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 15:27:49 UTC</createdTime>
+<generatorID>74C6EDE6-2FEB-D9F7-1F5F-186076D1E026</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>02677793-D51D-C3AA-1AEC-1D442DBF4FCD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1A39C6A9-096A-0873-D1A4-6F7BA0735669" name="Users_PK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-06 15:27:49 UTC</createdTime>
+<generatorID>717F01C7-8319-C31F-7669-6ECB659F38E3</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE36A26B-EEBA-E786-E31A-984DE4D052DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
