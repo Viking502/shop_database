@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="transactions" directorySegmentName="seg_0" id="AB2F04A6-774E-93D2-895C-D95ABF53972A">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="orders" directorySegmentName="seg_0" id="AB2F04A6-774E-93D2-895C-D95ABF53972A">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-16 09:50:46 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
