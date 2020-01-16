@@ -1,4 +1,4 @@
-CREATE TABLE User
+CREATE TABLE "User"
     (
      id INTEGER NOT NULL , 
      name VARCHAR NOT NULL , 
@@ -18,7 +18,7 @@ CREATE TABLE Worker
      employed_since DATETIME NOT NULL , 
      position VARCHAR NOT NULL ,
      PRIMARY KEY(user_id) ,
-     FOREIGN KEY (user_id) REFERENCES User(id)
+     FOREIGN KEY (user_id) REFERENCES "User"(id)
     )
 GO
 
@@ -29,7 +29,7 @@ CREATE TABLE Client
      policy_accepted BIT NOT NULL , 
      user_activity_id INTEGER NOT NULL ,
      PRIMARY KEY(user_id) ,
-     FOREIGN KEY (user_id) REFERENCES User(id)
+     FOREIGN KEY (user_id) REFERENCES "User"(id)
     )
 GO 
 
@@ -41,7 +41,7 @@ CREATE TABLE ClientLog
      message VARCHAR , 
      client_id INTEGER NOT NULL ,
      PRIMARY KEY (id) ,
-     FOREIGN KEY (client_id) REFERENCES Client(id)
+     FOREIGN KEY (client_id) REFERENCES Client(user_id)
     )
 GO
 
@@ -52,8 +52,8 @@ CREATE TABLE ClientActivity
      last_login DATETIME NOT NULL , 
      total_expences MONEY NOT NULL ,
      client_id INTEGER NOT NULL , 
-     PRIMARY KEY (id)
-     FOREIGN KEY (client_id) REFERENCES Client(id)
+     PRIMARY KEY (id) ,
+     FOREIGN KEY (client_id) REFERENCES Client(user_id)
     )
 GO
 
@@ -68,7 +68,7 @@ CREATE TABLE Address
      zip_code INTEGER NOT NULL , 
      user_id INTEGER NOT NULL ,
      PRIMARY KEY(id) ,
-     FOREIGN KEY(user_id) REFERENCES Client(id)
+     FOREIGN KEY(user_id) REFERENCES Client(user_id)
     )
 GO
 
@@ -101,6 +101,17 @@ CREATE TABLE ProductCategory
     )
 GO
 
+CREATE TABLE ProductImage 
+    (
+     id INTEGER NOT NULL , 
+     name VARCHAR , 
+     path VARCHAR NOT NULL , 
+     width INTEGER NOT NULL , 
+     height INTEGER NOT NULL , 
+     PRIMARY KEY (id)
+    )
+GO
+
 CREATE TABLE Product 
     (
      id INTEGER NOT NULL , 
@@ -109,22 +120,9 @@ CREATE TABLE Product
      image_id INTEGER NOT NULL ,
      PRIMARY KEY(id) ,
      FOREIGN KEY (category_id) REFERENCES ProductCategory(id) ,
-     FOREIGN KEY (image_id) REFERENCES ProductCategory(id)
+     FOREIGN KEY (image_id) REFERENCES ProductImage(id)
     )
 GO 
-
-CREATE TABLE ProductImage 
-    (
-     id INTEGER NOT NULL , 
-     name VARCHAR , 
-     path VARCHAR NOT NULL , 
-     width INTEGER NOT NULL , 
-     height INTEGER NOT NULL , 
-     product_id INTEGER NOT NULL , 
-     PRIMARY KEY (id) ,
-     FOREIGN KEY (product_id) REFERENCES Product(id)
-    )
-GO
 
 CREATE TABLE ProductPrice 
     (
@@ -138,7 +136,7 @@ CREATE TABLE ProductPrice
     )
 GO
 
-CREATE TABLE Order 
+CREATE TABLE "Order" 
     (
      id INTEGER NOT NULL , 
      date DATETIME NOT NULL , 
@@ -151,8 +149,11 @@ CREATE TABLE OrderDetails
     (
      id INTEGER NOT NULL , 
      order_id INTEGER NOT NULL , 
-     PRIMARY KEY (id) ,
-     FOREIGN KEY (order_id) REFERENCES Order(id)
+	 quantity INTEGER NOT NULL ,
+     product_id INTEGER NOT NULL ,
+	 PRIMARY KEY (id) ,
+     FOREIGN KEY (order_id) REFERENCES "Order"(id) ,
+	 FOREIGN KEY (product_id) REFERENCES Product(id)
     )
 GO
 
@@ -164,7 +165,7 @@ CREATE TABLE OrderHistory
      note VARCHAR , 
      order_id INTEGER NOT NULL , 
      PRIMARY KEY (id) ,
-     FOREIGN KEY (order_id) REFERENCES Order(id)
+     FOREIGN KEY (order_id) REFERENCES "Order"(id)
     )
 GO
 
@@ -182,12 +183,13 @@ CREATE TABLE Conversation
      id INTEGER NOT NULL , 
      start_date DATETIME NOT NULL , 
      is_closed BIT , 
-     conversation_category_id INTEGER NOT NULL , 
+     category_id INTEGER NOT NULL , 
      user_id INTEGER NOT NULL , 
      worker_id INTEGER NOT NULL ,
      PRIMARY KEY(id) ,
-     FOREIGN KEY (user_id) REFERENCES Client(id) ,
-     FOREIGN KEY (worker_id) REFERENCES Worker(id)
+     FOREIGN KEY (user_id) REFERENCES Client(user_id) ,
+     FOREIGN KEY (worker_id) REFERENCES Worker(user_id) ,
+	 FOREIGN KEY (category_id) REFERENCES ConversationCategories(id)
     )
 GO
 
@@ -214,4 +216,3 @@ CREATE TABLE Attachment
      FOREIGN KEY (message_id) REFERENCES Message(id)
     )
 GO
-
