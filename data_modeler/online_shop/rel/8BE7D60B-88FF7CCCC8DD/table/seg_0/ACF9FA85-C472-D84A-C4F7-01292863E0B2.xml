@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ACF9FA85-C472-D84A-C4F7-01292863E0B2" name="product">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ACF9FA85-C472-D84A-C4F7-01292863E0B2" name="Product">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-06 15:27:49 UTC</createdTime>
 <generatorID>374F0174-9157-8988-D056-C49D0D6A0496</generatorID>
@@ -19,9 +19,65 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="name" id="5D0D460A-729A-6C99-5D4E-511931756CD6">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>8E3AE937-63FF-B77D-0099-8B459AEEBB60</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Transaction_details_id" id="D8FC7170-1452-62E4-CC7F-58C71F70820E">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>CE6C24DA-7647-EAE5-EB8D-853E57CC43E8</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="52176D97-8891-87C6-4C7B-32E682DC8F06" referredColumn="5864B65C-239B-8847-A35F-9C1A0DD224B7"/>
+</associations>
+</Column>
+<Column name="Transaction_details_Transaction_id" id="2977A727-0676-2434-A9BE-B8E1E1B6079E">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>A41F2E1C-DCDD-BDC2-EF7F-75D487699683</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="52176D97-8891-87C6-4C7B-32E682DC8F06" referredColumn="2F55FA67-7F9F-C160-3F66-7FD21E02067F"/>
+</associations>
+</Column>
+<Column name="Product_category_id" id="9D1A37AA-3CB7-CA76-5D93-CA5858330254">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>C9FE6EFD-8A61-4625-3531-8A888A654878</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C81358B-9DD7-DC4C-08B6-73A8AF301635" referredColumn="7FA5A335-BE2C-FA1D-9E2A-569A58049723"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D9600FD8-928D-EB32-540C-DF4E0F810DF7" name="product_PK">
+<ind_PK_UK id="D9600FD8-928D-EB32-540C-DF4E0F810DF7" name="Product_PK">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-06 15:27:49 UTC</createdTime>
 <generatorID>7275BEF8-AA8C-7282-6182-F7EE04B8FCF3</generatorID>
@@ -31,6 +87,42 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7E7F7ED4-3D2E-CA54-9935-EEB06EB192B8"/>
+<colUsage columnID="9D1A37AA-3CB7-CA76-5D93-CA5858330254"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB521E31-6C1D-34C2-23FD-5AFE6A2CCF31" name="Product__IDX">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>9921AE3A-3C7E-044F-C576-154309704A4C</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D8FC7170-1452-62E4-CC7F-58C71F70820E"/>
+<colUsage columnID="2977A727-0676-2434-A9BE-B8E1E1B6079E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="004FADCD-00C3-B8E6-AFD4-7CBC0C5A502D" name="Product_Product_category_FK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>8CBE0AD1-94CB-DE66-C322-C56841239786</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D1A37AA-3CB7-CA76-5D93-CA5858330254"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D59ABE36-BD97-722C-ED27-31740CC18762" name="Product_Transaction_details_FK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>9921AE3A-3C7E-044F-C576-154309704A4C</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8FC7170-1452-62E4-CC7F-58C71F70820E"/>
+<colUsage columnID="2977A727-0676-2434-A9BE-B8E1E1B6079E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="757944A8-8C0B-0790-634C-F246F02B5D5E" name="Message">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>7E539BE5-71DD-C988-6100-D0F859B8C98A</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="3D88D962-885A-16E2-C686-1DA8C5DFA876">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>1E0069F2-A74B-306F-8591-DF29F3FE1AF6</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="author_category" id="A0BE9F3F-7ED5-196D-E4FD-E295138C3F4B">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>E5CFCEF3-0966-60E1-5CB1-1BA16C43ECF5</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="message" id="3D208E41-9BDA-56AC-C0E7-893FB13E5735">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>FB117EA0-127F-B03B-381B-BB30202CB85D</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date" id="CAB6E726-AFA6-945D-F343-659901FB34B8">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>7B2F9EB8-183D-C74F-EB6D-DCB839AD4E51</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>4272F224-5F7E-90F1-F7F2-9661CE8A5F16</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Conversation_id" id="5DB9492C-C7F9-96E7-DDCE-A152413F0E81">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>2E49E532-3ECA-9CF3-7F16-14071511A44C</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E670BC5-F087-7FF0-EA4F-0FFFC7E249CF" referredColumn="A4DC99E5-D9E4-CC6C-C5DD-5DBECE7B5141"/>
+</associations>
+</Column>
+<Column name="Conversation_User_id" id="40402AF0-412C-02AA-7F71-ACD0E4DC95AC">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:27:36 UTC</createdTime>
+<generatorID>4F0DC567-C25A-C45F-39B0-56610FA6394C</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="User_id" id="18F76141-0275-CB1D-4121-14688B79504D">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:27:36 UTC</createdTime>
+<generatorID>B2130DFF-FB85-F66F-9D0F-E63828D7D77E</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B30F7021-6634-E0A4-C65D-AD1B762BDF23" referredColumn="FE36A26B-EEBA-E786-E31A-984DE4D052DA"/>
+</associations>
+</Column>
+<Column name="Conversation_Worker_id" id="08B02F5E-9665-25C6-9AF3-1BC61BF0F944">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-16 09:26:12 UTC</createdTime>
+<generatorID>0221FCCD-72EF-5A51-9065-784117A2CB76</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E670BC5-F087-7FF0-EA4F-0FFFC7E249CF" referredColumn="B66B13C9-49A3-AF8C-E055-CFFA11DDD3F0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5A26007B-F554-EC59-7177-26CE84B77C73" name="Message_PK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>2C5B06DE-24FA-6899-769F-1D0FEEA4F07D</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D88D962-885A-16E2-C686-1DA8C5DFA876"/>
+<colUsage columnID="5DB9492C-C7F9-96E7-DDCE-A152413F0E81"/>
+<colUsage columnID="08B02F5E-9665-25C6-9AF3-1BC61BF0F944"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="357524C8-E16C-D7D8-6474-C1D9D0AC98C0" name="Message_Conversation_FK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>94AF3B95-61EA-D5E4-70B0-0CA680720A5F</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DB9492C-C7F9-96E7-DDCE-A152413F0E81"/>
+<colUsage columnID="08B02F5E-9665-25C6-9AF3-1BC61BF0F944"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E089E3E-8A42-3A7A-44AA-818AD1BCA193" name="Message_User_FK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:27:36 UTC</createdTime>
+<generatorID>BACDEF5B-08ED-0DEE-9BE8-EECE4DC889B0</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18F76141-0275-CB1D-4121-14688B79504D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

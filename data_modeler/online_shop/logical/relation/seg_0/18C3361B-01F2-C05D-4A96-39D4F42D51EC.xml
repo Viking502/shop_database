@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="attatchment" directorySegmentName="seg_0" id="18C3361B-01F2-C05D-4A96-39D4F42D51EC">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:05:30 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<sourcePk>2C5B06DE-24FA-6899-769F-1D0FEEA4F07D</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7E539BE5-71DD-C988-6100-D0F859B8C98A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8BBC334F-04CD-43FE-96FF-0C578002F274</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

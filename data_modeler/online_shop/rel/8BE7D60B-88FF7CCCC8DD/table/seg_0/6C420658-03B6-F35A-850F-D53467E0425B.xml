@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6C420658-03B6-F35A-850F-D53467E0425B" name="Transaction_details">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>0540B35F-08FD-0C9C-1440-7A3BD0524323</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="5864B65C-239B-8847-A35F-9C1A0DD224B7">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>A2D6C8E4-4B63-4A2B-8B4A-9F5E26F58B18</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Transaction_id" id="2F55FA67-7F9F-C160-3F66-7FD21E02067F">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>44D0C433-8F16-AAAC-39C0-F1F29ABD023B</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9CB57BF2-7A79-E77D-EB96-FCBC7D717B6A" referredColumn="CBC315DE-D25F-3192-64AF-5FACBD39F4B3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3C07E949-2D40-83B2-C657-382B3F72264C" name="Transaction_details_PK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>09EB52B8-D4BF-EB4A-2FB2-5047AAD9B03C</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5864B65C-239B-8847-A35F-9C1A0DD224B7"/>
+<colUsage columnID="2F55FA67-7F9F-C160-3F66-7FD21E02067F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6555F0F-DD08-ACF2-9CD4-BE5B0AC2863E" name="Transaction_details_Transaction_FK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-11 16:20:40 UTC</createdTime>
+<generatorID>04020F72-558F-0FCE-6E8A-D6B8A9A913F7</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F55FA67-7F9F-C160-3F66-7FD21E02067F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
