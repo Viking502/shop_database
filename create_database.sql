@@ -7,7 +7,7 @@ CREATE TABLE "User"
      password VARCHAR NOT NULL , 
      register_date DATETIME NOT NULL , 
      policy_accepted BIT NOT NULL,
-     PRIMARY KEY(id)
+     CONSTRAINT UserPK PRIMARY KEY(id)
     )
 GO
 
@@ -17,8 +17,8 @@ CREATE TABLE Worker
      salary MONEY NOT NULL , 
      employed_since DATETIME NOT NULL , 
      position VARCHAR NOT NULL ,
-     PRIMARY KEY(user_id) ,
-     FOREIGN KEY (user_id) REFERENCES "User"(id)
+     CONSTRAINT WorkerPK PRIMARY KEY(user_id) ,
+     CONSTRAINT WorkerFK FOREIGN KEY (user_id) REFERENCES "User"(id)
     )
 GO
 
@@ -28,8 +28,8 @@ CREATE TABLE Client
      register_date DATETIME NOT NULL , 
      policy_accepted BIT NOT NULL , 
      user_activity_id INTEGER NOT NULL ,
-     PRIMARY KEY(user_id) ,
-     FOREIGN KEY (user_id) REFERENCES "User"(id)
+     CONSTRAINT ClientPK PRIMARY KEY(user_id) ,
+     CONSTRAINT ClientFK FOREIGN KEY (user_id) REFERENCES "User"(id)
     )
 GO 
 
@@ -40,8 +40,8 @@ CREATE TABLE ClientLog
      category VARCHAR NOT NULL , 
      message VARCHAR , 
      client_id INTEGER NOT NULL ,
-     PRIMARY KEY (id) ,
-     FOREIGN KEY (client_id) REFERENCES Client(user_id)
+     CONSTRAINT ClientLogPK PRIMARY KEY (id) ,
+     CONSTRAINT ClientLogFK FOREIGN KEY (client_id) REFERENCES Client(user_id)
     )
 GO
 
@@ -52,8 +52,8 @@ CREATE TABLE ClientActivity
      last_login DATETIME NOT NULL , 
      total_expences MONEY NOT NULL ,
      client_id INTEGER NOT NULL , 
-     PRIMARY KEY (id) ,
-     FOREIGN KEY (client_id) REFERENCES Client(user_id)
+     CONSTRAINT ClientActivityPK PRIMARY KEY (id) ,
+     CONSTRAINT ClientActivityFK FOREIGN KEY (client_id) REFERENCES Client(user_id)
     )
 GO
 
@@ -67,8 +67,8 @@ CREATE TABLE Address
      flat_number INTEGER , 
      zip_code INTEGER NOT NULL , 
      user_id INTEGER NOT NULL ,
-     PRIMARY KEY(id) ,
-     FOREIGN KEY(user_id) REFERENCES Client(user_id)
+     CONSTRAINT AddressPK PRIMARY KEY(id) ,
+     CONSTRAINT AddressFK FOREIGN KEY(user_id) REFERENCES Client(user_id)
     )
 GO
 
@@ -79,7 +79,7 @@ CREATE TABLE Balance
      income MONEY NOT NULL , 
      expense MONEY NOT NULL , 
      balance MONEY NOT NULL ,
-     PRIMARY KEY (id)
+     CONSTRAINT BalancePK PRIMARY KEY (id)
     )
 GO
 
@@ -88,7 +88,7 @@ CREATE TABLE Blacklist
      id INTEGER , 
      ip_address VARCHAR , 
      note VARCHAR ,
-     PRIMARY KEY(id)
+     CONSTRAINT BlacklistPK PRIMARY KEY(id)
     )
 GO
 
@@ -97,7 +97,7 @@ CREATE TABLE ProductCategory
      id INTEGER NOT NULL , 
      name VARCHAR NOT NULL , 
      tax FLOAT NOT NULL ,
-     PRIMARY KEY(id)
+     CONSTRAINT ProductCategoryPK PRIMARY KEY(id)
     )
 GO
 
@@ -108,7 +108,7 @@ CREATE TABLE ProductImage
      path VARCHAR NOT NULL , 
      width INTEGER NOT NULL , 
      height INTEGER NOT NULL , 
-     PRIMARY KEY (id)
+     CONSTRAINT ProductImagePK PRIMARY KEY (id)
     )
 GO
 
@@ -118,9 +118,9 @@ CREATE TABLE Product
      name VARCHAR NOT NULL , 
      category_id INTEGER NOT NULL ,
      image_id INTEGER NOT NULL ,
-     PRIMARY KEY(id) ,
-     FOREIGN KEY (category_id) REFERENCES ProductCategory(id) ,
-     FOREIGN KEY (image_id) REFERENCES ProductImage(id)
+     CONSTRAINT ProductPK PRIMARY KEY(id) ,
+     CONSTRAINT ProductFKCategory FOREIGN KEY (category_id) REFERENCES ProductCategory(id) ,
+     CONSTRAINT ProductFKImage FOREIGN KEY (image_id) REFERENCES ProductImage(id)
     )
 GO 
 
@@ -131,8 +131,8 @@ CREATE TABLE ProductPrice
      valid_from DATETIME NOT NULL , 
      valid_to DATETIME ,
      product_id INTEGER NOT NULL ,
-     PRIMARY KEY (id) ,
-     FOREIGN KEY (product_id) REFERENCES Product(id)
+     CONSTRAINT ProductPricePK PRIMARY KEY (id) ,
+     CONSTRAINT ProductPriceFK FOREIGN KEY (product_id) REFERENCES Product(id)
     )
 GO
 
@@ -141,7 +141,7 @@ CREATE TABLE "Order"
      id INTEGER NOT NULL , 
      date DATETIME NOT NULL , 
      payment_date DATETIME ,
-     PRIMARY KEY (id)
+     CONSTRAINT OrderPK PRIMARY KEY (id)
     )
 GO
 
@@ -151,9 +151,9 @@ CREATE TABLE OrderDetails
      order_id INTEGER NOT NULL , 
 	 quantity INTEGER NOT NULL ,
      product_id INTEGER NOT NULL ,
-	 PRIMARY KEY (id) ,
-     FOREIGN KEY (order_id) REFERENCES "Order"(id) ,
-	 FOREIGN KEY (product_id) REFERENCES Product(id)
+	 CONSTRAINT OrderDetailsPK PRIMARY KEY (id) ,
+     CONSTRAINT OrderDetailsFKOrder FOREIGN KEY (order_id) REFERENCES "Order"(id) ,
+	 CONSTRAINT OrderDetailsFKProduct FOREIGN KEY (product_id) REFERENCES Product(id)
     )
 GO
 
@@ -164,8 +164,8 @@ CREATE TABLE OrderHistory
      date DATETIME NOT NULL , 
      note VARCHAR , 
      order_id INTEGER NOT NULL , 
-     PRIMARY KEY (id) ,
-     FOREIGN KEY (order_id) REFERENCES "Order"(id)
+     CONSTRAINT OrderHistoryPK PRIMARY KEY (id) ,
+     CONSTRAINT OrderHistoryFK FOREIGN KEY (order_id) REFERENCES "Order"(id)
     )
 GO
 
@@ -174,7 +174,7 @@ CREATE TABLE ConversationCategories
      id INTEGER NOT NULL , 
      name VARCHAR NOT NULL , 
      priority INTEGER NOT NULL ,
-     PRIMARY KEY (id)
+     CONSTRAINT ConversationCategoriesPK PRIMARY KEY (id)
     )
 GO
 
@@ -186,10 +186,10 @@ CREATE TABLE Conversation
      category_id INTEGER NOT NULL , 
      user_id INTEGER NOT NULL , 
      worker_id INTEGER NOT NULL ,
-     PRIMARY KEY(id) ,
-     FOREIGN KEY (user_id) REFERENCES Client(user_id) ,
-     FOREIGN KEY (worker_id) REFERENCES Worker(user_id) ,
-	 FOREIGN KEY (category_id) REFERENCES ConversationCategories(id)
+     CONSTRAINT ConversationPK PRIMARY KEY(id) ,
+     CONSTRAINT ConversationFKClient FOREIGN KEY (user_id) REFERENCES Client(user_id) ,
+     CONSTRAINT ConversationFKWorker FOREIGN KEY (worker_id) REFERENCES Worker(user_id) ,
+	 CONSTRAINT ConverstaionFKCategory FOREIGN KEY (category_id) REFERENCES ConversationCategories(id)
     )
 GO
 
@@ -200,8 +200,8 @@ CREATE TABLE Message
      message VARCHAR , 
      date DATETIME NOT NULL , 
      conversation_id INTEGER NOT NULL 
-     PRIMARY KEY (id) ,
-     FOREIGN KEY (conversation_id) REFERENCES Conversation(id)
+     CONSTRAINT MessagePK PRIMARY KEY (id) ,
+     CONSTRAINT MessageFK FOREIGN KEY (conversation_id) REFERENCES Conversation(id)
     )
 GO
 
@@ -212,7 +212,7 @@ CREATE TABLE Attachment
      size INTEGER , 
      data_type VARCHAR , 
      message_id INTEGER NOT NULL , 
-     PRIMARY KEY (id) ,
-     FOREIGN KEY (message_id) REFERENCES Message(id)
+     CONSTRAINT AttachmentPK PRIMARY KEY (id) ,
+     CONSTRAINT AttachemntFK FOREIGN KEY (message_id) REFERENCES Message(id)
     )
 GO
