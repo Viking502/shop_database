@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B2C71480-75C5-BBB1-DFAD-450331432439" containerWithKeyObject="6970ADF1-20F3-B967-926E-45463BEE0658" localFKIndex="94126E49-06B2-37BC-957A-7EBDEF86FD1A" name="Client_user_activity_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CFE2A468-DCA9-A584-FD41-B30BA2DC3999" containerWithKeyObject="6970ADF1-20F3-B967-926E-45463BEE0658" localFKIndex="C428538C-365C-7178-4EF1-1F501A62A906" name="Client_user_activity_FK">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-11 16:27:36 UTC</createdTime>
+<createdTime>2020-01-16 09:36:48 UTC</createdTime>
 <generatorID>DB284D8E-E44C-E46F-DB5C-08463A790E38</generatorID>
 <ownerDesignName>online_shop</ownerDesignName>
 <referredTableLongName>user_activity</referredTableLongName>

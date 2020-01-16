@@ -84,7 +84,7 @@
 <colAssociation fkAssociation="B3958A2A-66D2-46D8-53AC-976A25723350" referredColumn="5DB9492C-C7F9-96E7-DDCE-A152413F0E81"/>
 </associations>
 </Column>
-<Column name="id2" id="FDBB2B7A-2B71-9C32-CD7C-667AD0AF208A">
+<Column name="Message_Conversation_User_id" id="FDBB2B7A-2B71-9C32-CD7C-667AD0AF208A">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-11 16:27:36 UTC</createdTime>
 <generatorID>0C2835EF-2CBC-8A9A-CAE8-CA0D03774E12</generatorID>
@@ -95,11 +95,8 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="B3958A2A-66D2-46D8-53AC-976A25723350" referredColumn="40402AF0-412C-02AA-7F71-ACD0E4DC95AC"/>
-</associations>
 </Column>
-<Column name="id3" id="47032DA6-5C33-D268-543E-8568968AF895">
+<Column name="Message_User_id" id="47032DA6-5C33-D268-543E-8568968AF895">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-11 16:27:36 UTC</createdTime>
 <generatorID>0347F715-77CC-4943-1FF3-F196ADD88035</generatorID>
@@ -110,8 +107,20 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Message_id2" id="DE8B141D-9301-0923-6167-C80BE000CC82">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-16 09:26:12 UTC</createdTime>
+<generatorID>B6F1CD77-2C6B-67A6-6B7F-7AB14B4BD75E</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="B3958A2A-66D2-46D8-53AC-976A25723350" referredColumn="18F76141-0275-CB1D-4121-14688B79504D"/>
+<colAssociation fkAssociation="B3958A2A-66D2-46D8-53AC-976A25723350" referredColumn="08B02F5E-9665-25C6-9AF3-1BC61BF0F944"/>
 </associations>
 </Column>
 </columns>
@@ -128,8 +137,7 @@
 <colUsage columnID="1F711CC9-C0FE-0F3D-783C-EE62DF48B13F"/>
 <colUsage columnID="822DCBF2-AA9A-4999-9188-2A7B8453738A"/>
 <colUsage columnID="59297F9D-4829-84D5-004B-C2647C85AE77"/>
-<colUsage columnID="FDBB2B7A-2B71-9C32-CD7C-667AD0AF208A"/>
-<colUsage columnID="47032DA6-5C33-D268-543E-8568968AF895"/>
+<colUsage columnID="DE8B141D-9301-0923-6167-C80BE000CC82"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="09FB91BD-88BC-10CC-C756-FD96A1F2C315" name="Attachment_Message_FK">
@@ -142,8 +150,7 @@
 <indexColumnUsage>
 <colUsage columnID="822DCBF2-AA9A-4999-9188-2A7B8453738A"/>
 <colUsage columnID="59297F9D-4829-84D5-004B-C2647C85AE77"/>
-<colUsage columnID="FDBB2B7A-2B71-9C32-CD7C-667AD0AF208A"/>
-<colUsage columnID="47032DA6-5C33-D268-543E-8568968AF895"/>
+<colUsage columnID="DE8B141D-9301-0923-6167-C80BE000CC82"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

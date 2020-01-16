@@ -78,29 +78,15 @@
 <domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id2" id="4F0DC567-C25A-C45F-39B0-56610FA6394C">
+<Attribute name="id2" id="0221FCCD-72EF-5A51-9065-784117A2CB76">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-11 16:24:05 UTC</createdTime>
+<createdTime>2020-01-16 09:23:23 UTC</createdTime>
 <generatorID>94AF3B95-61EA-D5E4-70B0-0CA680720A5F</generatorID>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
 </engineerTo>
-<referedAttribute>462CD7DF-5770-2870-6A52-0F5A51CA717A</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id3" id="B2130DFF-FB85-F66F-9D0F-E63828D7D77E">
-<createdBy>viking</createdBy>
-<createdTime>2020-01-11 16:26:51 UTC</createdTime>
-<generatorID>BACDEF5B-08ED-0DEE-9BE8-EECE4DC889B0</generatorID>
-<ownerDesignName>online_shop</ownerDesignName>
-<engineerTo>
-<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
-</engineerTo>
-<referedAttribute>77075B66-5ED5-464F-FA05-8FE4F495BCB1</referedAttribute>
+<referedAttribute>2434117A-D1BF-D3D6-09FF-E5B0493212B7</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
@@ -112,15 +98,15 @@
 <createdBy>viking</createdBy>
 <createdTime>2020-01-11 15:55:20 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>1E0069F2-A74B-306F-8591-DF29F3FE1AF6</attributeRef>
 <attributeRef>2E49E532-3ECA-9CF3-7F16-14071511A44C</attributeRef>
-<attributeRef>4F0DC567-C25A-C45F-39B0-56610FA6394C</attributeRef>
-<attributeRef>B2130DFF-FB85-F66F-9D0F-E63828D7D77E</attributeRef>
+<attributeRef>0221FCCD-72EF-5A51-9065-784117A2CB76</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

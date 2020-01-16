@@ -121,13 +121,13 @@
 <createdBy>viking</createdBy>
 <createdTime>2020-01-06 16:14:26 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>7496A0F4-1A83-2737-3FB6-8F84786C1092</attributeRef>
-<attributeRef>5C7525FD-5F62-1547-390A-11805F0CC61C</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

@@ -87,7 +87,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="1A39C6A9-096A-0873-D1A4-6F7BA0735669" name="Users_PK">
+<ind_PK_UK id="1A39C6A9-096A-0873-D1A4-6F7BA0735669" name="User_PK">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-06 15:27:49 UTC</createdTime>
 <generatorID>717F01C7-8319-C31F-7669-6ECB659F38E3</generatorID>

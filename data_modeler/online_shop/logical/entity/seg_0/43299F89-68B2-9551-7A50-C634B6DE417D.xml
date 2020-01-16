@@ -66,10 +66,10 @@
 <domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id2" id="462CD7DF-5770-2870-6A52-0F5A51CA717A">
+<Attribute name="id2" id="2434117A-D1BF-D3D6-09FF-E5B0493212B7">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-11 16:24:05 UTC</createdTime>
-<generatorID>B7468127-CFCC-5B64-D0D3-83E20DF743F1</generatorID>
+<createdTime>2020-01-16 09:23:23 UTC</createdTime>
+<generatorID>3CD706CA-80FA-FBAA-51F6-B60C56AF2777</generatorID>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
@@ -86,13 +86,14 @@
 <createdBy>viking</createdBy>
 <createdTime>2020-01-06 16:10:36 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>D1276B19-36F1-0E3A-40B6-3B29044ED36E</attributeRef>
-<attributeRef>462CD7DF-5770-2870-6A52-0F5A51CA717A</attributeRef>
+<attributeRef>2434117A-D1BF-D3D6-09FF-E5B0493212B7</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

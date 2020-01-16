@@ -84,8 +84,9 @@
 <createdBy>viking</createdBy>
 <createdTime>2020-01-06 16:04:58 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -55,4 +55,15 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="73674775-4857-B4CD-19ED-BBBA52E97BC7" name="Client PK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-16 09:20:58 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
 </Entity>

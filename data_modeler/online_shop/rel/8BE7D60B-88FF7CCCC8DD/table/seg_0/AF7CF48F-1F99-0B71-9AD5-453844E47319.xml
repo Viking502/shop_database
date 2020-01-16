@@ -87,7 +87,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Users_id" id="85502772-33B8-7D72-4FB2-6BFC0AFC1DC4">
+<Column name="User_id" id="85502772-33B8-7D72-4FB2-6BFC0AFC1DC4">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-11 16:20:40 UTC</createdTime>
 <generatorID>5C7525FD-5F62-1547-390A-11805F0CC61C</generatorID>
@@ -117,7 +117,7 @@
 <colUsage columnID="85502772-33B8-7D72-4FB2-6BFC0AFC1DC4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CA943E9F-3C99-1759-D946-8FA6E22187F6" name="Address_Users_FK">
+<ind_PK_UK id="CA943E9F-3C99-1759-D946-8FA6E22187F6" name="Address_User_FK">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-11 16:20:40 UTC</createdTime>
 <generatorID>578C6477-3A17-1618-B731-CE67CAF244B8</generatorID>
@@ -127,6 +127,14 @@
 <indexColumnUsage>
 <colUsage columnID="85502772-33B8-7D72-4FB2-6BFC0AFC1DC4"/>
 </indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9D795F3-72ED-2561-50BC-ECEBB67ABC34" name="Address_Client_FK">
+<createdBy>viking</createdBy>
+<createdTime>2020-01-16 09:26:12 UTC</createdTime>
+<generatorID>3E6F6AC5-AE28-ECDA-B74F-5FBDEE8D5703</generatorID>
+<ownerDesignName>online_shop</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
 </ind_PK_UK>
 </indexes>
 </Table>

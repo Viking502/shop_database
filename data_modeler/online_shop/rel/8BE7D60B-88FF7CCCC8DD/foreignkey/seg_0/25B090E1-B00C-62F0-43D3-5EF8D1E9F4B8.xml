@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="25B090E1-B00C-62F0-43D3-5EF8D1E9F4B8" containerWithKeyObject="AF7CF48F-1F99-0B71-9AD5-453844E47319" localFKIndex="CA943E9F-3C99-1759-D946-8FA6E22187F6" name="Address_Users_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="25B090E1-B00C-62F0-43D3-5EF8D1E9F4B8" containerWithKeyObject="AF7CF48F-1F99-0B71-9AD5-453844E47319" localFKIndex="CA943E9F-3C99-1759-D946-8FA6E22187F6" name="Address_User_FK">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-11 16:20:40 UTC</createdTime>
 <generatorID>578C6477-3A17-1618-B731-CE67CAF244B8</generatorID>
 <ownerDesignName>online_shop</ownerDesignName>
-<referredTableLongName>Users</referredTableLongName>
+<referredTableLongName>User</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>034118E6-DE3D-C082-3851-390889164132</referredTableID>
 <keyObject>1A39C6A9-096A-0873-D1A4-6F7BA0735669</keyObject>

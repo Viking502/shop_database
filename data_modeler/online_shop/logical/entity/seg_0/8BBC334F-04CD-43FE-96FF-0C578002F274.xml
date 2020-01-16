@@ -93,29 +93,15 @@
 <domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id2" id="0C2835EF-2CBC-8A9A-CAE8-CA0D03774E12">
+<Attribute name="id2" id="B6F1CD77-2C6B-67A6-6B7F-7AB14B4BD75E">
 <createdBy>viking</createdBy>
-<createdTime>2020-01-11 16:24:05 UTC</createdTime>
+<createdTime>2020-01-16 09:23:23 UTC</createdTime>
 <generatorID>18C3361B-01F2-C05D-4A96-39D4F42D51EC</generatorID>
 <ownerDesignName>online_shop</ownerDesignName>
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
 </engineerTo>
-<referedAttribute>4F0DC567-C25A-C45F-39B0-56610FA6394C</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id3" id="0347F715-77CC-4943-1FF3-F196ADD88035">
-<createdBy>viking</createdBy>
-<createdTime>2020-01-11 16:26:51 UTC</createdTime>
-<generatorID>18C3361B-01F2-C05D-4A96-39D4F42D51EC</generatorID>
-<ownerDesignName>online_shop</ownerDesignName>
-<engineerTo>
-<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
-</engineerTo>
-<referedAttribute>B2130DFF-FB85-F66F-9D0F-E63828D7D77E</referedAttribute>
+<referedAttribute>0221FCCD-72EF-5A51-9065-784117A2CB76</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
@@ -127,16 +113,16 @@
 <createdBy>viking</createdBy>
 <createdTime>2020-01-11 15:58:51 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>7AA5BA97-70EB-FE86-9A7F-196ABEC67CAA</attributeRef>
 <attributeRef>F5978BE7-C1C6-4077-3D90-48081A583664</attributeRef>
 <attributeRef>73938DCC-F62F-35A8-215D-9B7305005329</attributeRef>
-<attributeRef>0C2835EF-2CBC-8A9A-CAE8-CA0D03774E12</attributeRef>
-<attributeRef>0347F715-77CC-4943-1FF3-F196ADD88035</attributeRef>
+<attributeRef>B6F1CD77-2C6B-67A6-6B7F-7AB14B4BD75E</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
