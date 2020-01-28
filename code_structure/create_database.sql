@@ -1,6 +1,6 @@
 CREATE TABLE "User"
     (
-     id INTEGER NOT NULL IDENTITY (1,1),
+     id INTEGER IDENTITY (1,1),
      name VARCHAR(64) NOT NULL,
      surname VARCHAR(64) NOT NULL,
      email VARCHAR(64) NOT NULL,
@@ -13,7 +13,7 @@ GO
 
 CREATE TABLE Worker
     (
-     user_id INTEGER NOT NULL,
+     user_id INTEGER,
      salary MONEY NOT NULL,
      employed_since DATETIME NOT NULL,
      position VARCHAR NOT NULL,
@@ -24,7 +24,7 @@ GO
 
 CREATE TABLE Client
     (
-     user_id INTEGER NOT NULL,
+     user_id INTEGER,
      register_date DATETIME NOT NULL,
      policy_accepted BIT NOT NULL,
      CONSTRAINT ClientPK PRIMARY KEY(user_id),
@@ -34,7 +34,7 @@ GO
 
 CREATE TABLE ClientLog
     (
-     id INTEGER NOT NULL IDENTITY (1,1),
+     id INTEGER IDENTITY (1,1),
      date DATETIME NOT NULL,
      category VARCHAR(32) NOT NULL,
      message VARCHAR(512),
@@ -46,7 +46,7 @@ GO
 
 CREATE TABLE ClientActivity
     (
-     id INTEGER NOT NULL IDENTITY (1,1),
+     id INTEGER IDENTITY (1,1),
      transactions_num INTEGER NOT NULL,
      last_login DATETIME NOT NULL,
      total_expenses MONEY NOT NULL,
@@ -58,7 +58,7 @@ GO
 
 CREATE TABLE Address
     (
-     id INTEGER NOT NULL IDENTITY (1,1),
+     id INTEGER IDENTITY (1,1),
      country VARCHAR(64) NOT NULL,
      state VARCHAR(64) NOT NULL,
      street VARCHAR(64),
@@ -73,7 +73,7 @@ GO
 
 CREATE TABLE Blacklist
     (
-     id INTEGER NOT NULL IDENTITY (1,1),
+     id INTEGER IDENTITY (1,1),
      ip_address VARCHAR(32) UNIQUE,
      note VARCHAR(512),
      CONSTRAINT BlacklistPK PRIMARY KEY(id)
@@ -82,7 +82,7 @@ GO
 
 CREATE TABLE ProductCategory
     (
-     id INTEGER NOT NULL IDENTITY (1,1),
+     id INTEGER IDENTITY (1,1),
      name VARCHAR(64) NOT NULL,
      tax FLOAT NOT NULL,
      CONSTRAINT ProductCategoryPK PRIMARY KEY(id)
@@ -91,7 +91,7 @@ GO
 
 CREATE TABLE ProductImage
     (
-     id INTEGER NOT NULL IDENTITY (1,1),
+     id INTEGER IDENTITY (1,1),
      name VARCHAR(64),
      path VARCHAR(128) NOT NULL,
      width INTEGER NOT NULL,
@@ -102,7 +102,7 @@ GO
 
 CREATE TABLE Product
     (
-     id INTEGER NOT NULL IDENTITY (1,1),
+     id INTEGER IDENTITY (1,1),
      name VARCHAR(64) NOT NULL,
      category_id INTEGER NOT NULL,
      image_id INTEGER NOT NULL,
@@ -114,7 +114,7 @@ GO
 
 CREATE TABLE ProductPrice
     (
-     id INTEGER NOT NULL IDENTITY (1,1),
+     id INTEGER IDENTITY (1,1),
      price MONEY NOT NULL,
      valid_from DATETIME NOT NULL,
      valid_to DATETIME,
@@ -126,7 +126,7 @@ GO
 
 CREATE TABLE "Order"
     (
-     id INTEGER NOT NULL IDENTITY (1,1),
+     id INTEGER IDENTITY (1,1),
      date DATETIME NOT NULL,
      payment_date DATETIME,
 	 client_id INTEGER NOT NULL,
@@ -137,7 +137,7 @@ GO
 
 CREATE TABLE OrderDetails
     (
-     id INTEGER NOT NULL IDENTITY (1,1),
+     id INTEGER IDENTITY (1,1),
      order_id INTEGER NOT NULL,
 	 quantity INTEGER NOT NULL,
      product_id INTEGER NOT NULL,
@@ -149,7 +149,7 @@ GO
 
 CREATE TABLE OrderHistory
     (
-     id INTEGER NOT NULL IDENTITY (1,1),
+     id INTEGER IDENTITY (1,1),
      status VARCHAR(64) NOT NULL,
      date DATETIME NOT NULL,
      note VARCHAR(512),
@@ -161,7 +161,7 @@ GO
 
 CREATE TABLE ConversationCategories
     (
-     id INTEGER NOT NULL IDENTITY (1,1),
+     id INTEGER IDENTITY (1,1),
      name VARCHAR(64) NOT NULL,
      priority INTEGER NOT NULL,
      CONSTRAINT ConversationCategoriesPK PRIMARY KEY (id)
@@ -170,7 +170,7 @@ GO
 
 CREATE TABLE Conversation
     (
-     id INTEGER NOT NULL IDENTITY (1,1),
+     id INTEGER IDENTITY (1,1),
      start_date DATETIME NOT NULL,
      is_closed BIT,
      category_id INTEGER NOT NULL,
@@ -185,7 +185,7 @@ GO
 
 CREATE TABLE Message
     (
-     id INTEGER NOT NULL IDENTITY (1,1),
+     id INTEGER IDENTITY (1,1),
      author_category VARCHAR(64) NOT NULL,
      message VARCHAR(512),
      date DATETIME NOT NULL,
@@ -197,7 +197,7 @@ GO
 
 CREATE TABLE Attachment
     (
-     id INTEGER NOT NULL IDENTITY (1,1),
+     id INTEGER IDENTITY (1,1),
      url VARCHAR(64) NOT NULL,
      size INTEGER,
      data_type VARCHAR(64),
