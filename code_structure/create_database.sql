@@ -74,7 +74,7 @@ GO
 CREATE TABLE Blacklist
     (
      id INTEGER NOT NULL IDENTITY (1,1),
-     ip_address VARCHAR(32),
+     ip_address VARCHAR(32) UNIQUE,
      note VARCHAR(512),
      CONSTRAINT BlacklistPK PRIMARY KEY(id)
     )
