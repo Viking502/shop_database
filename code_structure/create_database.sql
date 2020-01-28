@@ -27,7 +27,6 @@ CREATE TABLE Client
      user_id INTEGER NOT NULL, 
      register_date DATETIME NOT NULL, 
      policy_accepted BIT NOT NULL, 
-     user_activity_id INTEGER NOT NULL,
      CONSTRAINT ClientPK PRIMARY KEY(user_id),
      CONSTRAINT ClientFK FOREIGN KEY (user_id) REFERENCES "User"(id)
     )
