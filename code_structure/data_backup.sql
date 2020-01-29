@@ -20,5 +20,5 @@ VALUES('client', 'Hello, I have a technical problem.', '04.02.2021', 1)
 
 INSERT INTO Attachment (url, size, data_type, message_id)
 VALUES
-('www.funny_images.pl/image1', 262144, 'png', 1),
-('www.funny_images.pl/image2', 536870912, 'jpg', 1)
+('www.funny_images.pl/image1', 262144, 'pdf', 1),
+('www.funny_images.pl/image2', 16777216, 'gif', 1)

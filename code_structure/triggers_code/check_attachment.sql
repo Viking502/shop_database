@@ -22,19 +22,19 @@ AS
 
 		DECLARE @err_flag BIT = 0
 
-		IF (UPPER(@data_type) NOT IN('JPG', 'PNG', 'GIF'))
+		IF (UPPER(@data_type) NOT IN('JPG', 'PNG', 'GIF', 'PDF'))
 		BEGIN
-			RAISERROR('data type of attachemnt is not supported', 16, 1)
+			RAISERROR('Data type %s is not supported', 16, 1, @data_type)
 			SET @err_flag = 1
 		END
 		IF @size < 0
 		BEGIN
-			RAISERROR('wrong attachment size' ,16, 1)
+			RAISERROR('Wrong attachment size' ,16, 1)
 			SET @err_flag = 1
 		END
-		ELSE IF @size > 536870912 --512MB in bytes
+		ELSE IF @size > 16777216 --16MB in bytes
 		BEGIN
-			RAISERROR('attachment have too big size' ,16, 1)
+			RAISERROR('Attachment size is too big' ,16, 1)
 			SET @err_flag = 1
 		END
 
