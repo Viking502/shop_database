@@ -14,3 +14,11 @@ values('technical problems', 100)
 
 insert into Conversation (start_date, is_closed, category_id, user_id, worker_id)
 values('01.01.2019', 0, 1, 1, 2)
+
+insert into Message (author_category, message, date, conversation_id)
+values('client', 'Hello, I have a technical problem.', '04.02.2021', 1)
+
+insert into Attachment (url, size, data_type, message_id)
+values
+('www.funny_images.pl/image1', 262144, 'jpg', 1),
+('www.funny_images.pl/image2', 524288, 'jpg', 1)

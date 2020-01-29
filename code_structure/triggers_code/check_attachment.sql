@@ -7,18 +7,27 @@ instead of insert
 as
 	declare iterator cursor
 		for select * from inserted
-		for read only
 
 	declare @id int
 	declare @url varchar
 	declare @size int
 	declare @data_type varchar
+	declare @msg_id varchar
 
-	fetch iterator into @id, @url, @size, @data_type
-	while @@FETCH_STATUS = 1
+	open iterator
+
+	fetch iterator into @id, @url, @size, @data_type, @msg_id
+	while @@FETCH_STATUS = 0
 	begin
-		select @id, @url, @size, @data_type
-		fetch iterator into @id, @url, @size, @data_type
+		print(convert(varchar, @id) + ', ' +  @url + ', ' +  convert(varchar, @size) + ', ' +  @data_type + ', ' +  @msg_id)
+		
+		insert into Attachment (url, size, data_type, message_id)
+		values(@url, @size, @data_type, @msg_id)
+
+		fetch iterator into @id, @url, @size, @data_type, @msg_id
 	end
+
+	close iterator
+	deallocate iterator
 go
 
