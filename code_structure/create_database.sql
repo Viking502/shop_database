@@ -48,7 +48,6 @@ CREATE TABLE ClientActivity
     (
      id INTEGER IDENTITY (1,1),
      transactions_num INTEGER NOT NULL,
-     last_login DATETIME NOT NULL,
      total_expenses MONEY NOT NULL,
      client_id INTEGER NOT NULL,
      CONSTRAINT ClientActivityPK PRIMARY KEY (id),
@@ -106,6 +105,7 @@ CREATE TABLE Product
      name VARCHAR(64) NOT NULL,
      category_id INTEGER NOT NULL,
      image_id INTEGER NOT NULL,
+     price DECIMAL (10, 2) NOT NULL
      CONSTRAINT ProductPK PRIMARY KEY(id),
      CONSTRAINT ProductFKCategory FOREIGN KEY (category_id) REFERENCES ProductCategory(id),
      CONSTRAINT ProductFKImage FOREIGN KEY (image_id) REFERENCES ProductImage(id)
