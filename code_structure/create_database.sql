@@ -48,7 +48,6 @@ CREATE TABLE ClientActivity
     (
      id INTEGER IDENTITY (1,1),
      transactions_num INTEGER NOT NULL,
-     last_login DATETIME NOT NULL,
      total_expenses MONEY NOT NULL,
      client_id INTEGER NOT NULL,
      CONSTRAINT ClientActivityPK PRIMARY KEY (id),

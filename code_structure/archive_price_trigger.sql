@@ -2,8 +2,7 @@ IF OBJECT_ID('LastPriceExpirationDate', 'fn') IS NOT NULL
 	DROP FUNCTION LastPriceExpirationDate
 GO
 
-CREATE FUNCTION LastPriceExpirationDate
-()
+CREATE FUNCTION LastPriceExpirationDate ()
 RETURNS DATETIME
 AS
 BEGIN
@@ -14,7 +13,7 @@ BEGIN
     END
     ELSE
     BEGIN
-        SET @Result = (SELECT MAX(valid_to)FROM ProductPrice)
+        SET @Result = (SELECT MAX(valid_to) FROM ProductPrice)
     END
     RETURN @Result
 END
