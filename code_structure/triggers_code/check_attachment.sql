@@ -1,51 +1,51 @@
-if object_id('check_attachment', 'tr') is not null
-	drop trigger check_attachemnt
-go
-create trigger check_attachment 
-on [dbo].[Attachment] 
-instead of insert
-as
-	declare iterator cursor
-		for select * from inserted
+IF OBJECT_ID('check_attachment', 'tr') IS NOT NULL
+	DROP TRIGGER check_attachemnt
+GO
+CREATE TRIGGER check_attachment 
+ON [dbo].[Attachment] 
+INSTEAD OF INSERT
+AS
+	DECLARE iterator CURSOR
+		FOR SELECT * FROM inserted
 
-	declare @id int
-	declare @url varchar(64)
-	declare @size int
-	declare @data_type varchar(64)
-	declare @msg_id int
+	DECLARE @id INT
+	DECLARE @url VARCHAR(64)
+	DECLARE @size INT
+	DECLARE @data_type VARCHAR(64)
+	DECLARE @msg_id INT
 
-	open iterator
+	OPEN iterator
 
-	fetch iterator into @id, @url, @size, @data_type, @msg_id
-	while @@FETCH_STATUS = 0
-	begin
+	FETCH iterator INTO @id, @url, @size, @data_type, @msg_id
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
 
-		declare @err_flag bit = 0
+		DECLARE @err_flag BIT = 0
 
-		if (UPPER(@data_type) not in('JPG', 'PNG', 'GIF'))
-		begin
-			raiserror('data type of attachemnt is not supported', 16, 1)
-			set @err_flag = 1
-		end
-		if @size < 0
-		begin
-			raiserror('wrong attachment size' ,16, 1)
-			set @err_flag = 1
-		end
-		else if @size > 536870912 --512MB in bytes
-		begin
-			raiserror('attachment have too big size' ,16, 1)
-			set @err_flag = 1
-		end
+		IF (UPPER(@data_type) NOT IN('JPG', 'PNG', 'GIF'))
+		BEGIN
+			RAISERROR('data type of attachemnt is not supported', 16, 1)
+			SET @err_flag = 1
+		END
+		IF @size < 0
+		BEGIN
+			RAISERROR('wrong attachment size' ,16, 1)
+			SET @err_flag = 1
+		END
+		ELSE IF @size > 536870912 --512MB in bytes
+		BEGIN
+			RAISERROR('attachment have too big size' ,16, 1)
+			SET @err_flag = 1
+		END
 
-		if @err_flag = 0
-			insert into Attachment (url, size, data_type, message_id)
-			values(@url, @size, @data_type, @msg_id)
+		IF @err_flag = 0
+			INSERT INTO Attachment (url, size, data_type, message_id)
+			VALUES(@url, @size, @data_type, @msg_id)
 
-		fetch iterator into @id, @url, @size, @data_type, @msg_id
-	end
+		FETCH iterator INTO @id, @url, @size, @data_type, @msg_id
+	END
 
-	close iterator
-	deallocate iterator
-go
+	CLOSE iterator
+	DEALLOCATE iterator
+GO
 
