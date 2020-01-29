@@ -20,5 +20,5 @@ values('client', 'Hello, I have a technical problem.', '04.02.2021', 1)
 
 insert into Attachment (url, size, data_type, message_id)
 values
-('www.funny_images.pl/image1', 262144, 'jpg', 1),
-('www.funny_images.pl/image2', 524288, 'jpg', 1)
+('www.funny_images.pl/image1', 262144, 'png', 1),
+('www.funny_images.pl/image2', 536870912, 'jpg', 1)
