@@ -5,8 +5,6 @@ CREATE TABLE "User"
      surname VARCHAR(64) NOT NULL,
      email VARCHAR(64) NOT NULL,
      password VARCHAR(64) NOT NULL,
-     register_date DATETIME NOT NULL,
-     policy_accepted BIT NOT NULL,
      CONSTRAINT UserPK PRIMARY KEY(id)
     )
 GO
@@ -16,7 +14,7 @@ CREATE TABLE Worker
      user_id INTEGER,
      salary MONEY NOT NULL,
      employed_since DATETIME NOT NULL,
-     position VARCHAR NOT NULL,
+     position VARCHAR(64) NOT NULL,
      CONSTRAINT WorkerPK PRIMARY KEY(user_id),
      CONSTRAINT WorkerFK FOREIGN KEY (user_id) REFERENCES "User"(id)
     )
