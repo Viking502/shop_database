@@ -1,5 +1,4 @@
-IF OBJECT_ID('ConversationsPerCategory', 'v') IS NOT NULL
-	DROP VIEW ConversationsPerCategory
+DROP VIEW IF EXISTS ConversationsPerCategory
 GO
 
 CREATE VIEW ConversationsPerCategory

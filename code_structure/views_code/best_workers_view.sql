@@ -1,5 +1,4 @@
-IF OBJECT_ID('BestWorkers', 'v') IS NOT NULL
-	DROP VIEW BestWorkers
+DROP VIEW IF EXISTS BestWorkers
 GO
 
 CREATE VIEW BestWorkers
