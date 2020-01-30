@@ -58,6 +58,7 @@ CREATE TABLE Address
      id INTEGER IDENTITY (1,1),
      country VARCHAR(64) NOT NULL,
      state VARCHAR(64) NOT NULL,
+     city VARCHAR(64) NOT NULL,
      street VARCHAR(64),
      number INTEGER NOT NULL,
      flat_number INTEGER,

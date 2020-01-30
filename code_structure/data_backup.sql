@@ -18,6 +18,9 @@ VALUES('01.01.2019', 0, 1, 1, 2)
 INSERT INTO Message (author_category, message, date, conversation_id)
 VALUES('client', 'Hello, I have a technical problem.', '04.02.2021', 1)
 
+INSERT INTO Address (country, state, city, street, number, zip_code, user_id)
+VALUES('Poland', 'Malopolskie', 'Krakow', 'Lojasiewicza', 6, '30348', 1)
+
 INSERT INTO Attachment (url, size, data_type, message_id)
 VALUES
 ('www.funny_images.pl/image1', 262144, 'pdf', 1),
