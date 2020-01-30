@@ -6,6 +6,6 @@ CREATE VIEW ConversationsPerCategory
 AS
 	SELECT CC.name [Category name], COUNT(*) [Amount]
 	FROM Conversation C
-	JOIN ConversationCategories as CC ON C.id = CC.id
+	JOIN ConversationCategories CC ON C.id = CC.id
 	GROUP BY CC.name
 GO
