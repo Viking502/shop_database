@@ -1,19 +1,3 @@
-IF OBJECT_ID('GetNewOrderPrice', 'fn') IS NOT NULL
-	DROP FUNCTION GetNewOrderPrice
-GO
-
-CREATE FUNCTION GetNewOrderPrice
-(
-    @Quantity INTEGER,
-    @Price DECIMAL
-)
-RETURNS DECIMAL
-AS
-BEGIN
-    RETURN @Quantity * @Price
-END
-GO
-
 IF OBJECT_ID('clients_activity', 'tr') IS NOT NULL
 	DROP TRIGGER clients_activity
 GO
@@ -40,13 +24,13 @@ BEGIN
         SET transactions_num = transactions_num + 1
         WHERE ClientActivity.client_id = @ClientId
         UPDATE ClientActivity
-        SET total_expenses = total_expenses + dbo.[GetNewOrderPrice](@Quantity, @Price)
+        SET total_expenses = total_expenses + @Quantity * @Price
         WHERE ClientActivity.client_id = @ClientId
     END
     ELSE
     BEGIN
         INSERT INTO ClientActivity
-        VALUES (1, dbo.[GetNewOrderPrice](@Quantity, @Price), @ClientId)
+        VALUES (1, @Quantity * @Price, @ClientId)
     END
 END
 
