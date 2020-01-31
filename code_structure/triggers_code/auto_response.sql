@@ -6,9 +6,11 @@ ON Message
 AFTER INSERT
 AS
 	DECLARE @conversation INTEGER = (SELECT DISTINCT conversation_id FROM inserted)
+	DECLARE @last_msg DATETIME = (SELECT MAX(date) FROM Message where conversation_id = @conversation
+									AND date < (SELECT MAX(date) FROM inserted))
 
-	INSERT INTO Message (author_category, message, date, conversation_id)
-	VALUES('Bot', 'Hello, fuck off!', CURRENT_TIMESTAMP, @conversation)
-
+	if DATEDIFF(DAY, @last_msg, CURRENT_TIMESTAMP) > 1 OR @last_msg IS NULL
+		INSERT INTO Message (author_category, message, date, conversation_id)
+		VALUES('Bot', 'Hello, our consultant will contact you as soon as possible.', CURRENT_TIMESTAMP, @conversation)
 go
 
