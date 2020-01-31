@@ -7,9 +7,7 @@ CREATE FUNCTION ShowConversation (
 RETURNS TABLE
 AS
 RETURN
-	SELECT M.author_category [Author], M.message [Message]
+	SELECT M.author_category [Author], M.message [Message], M.date [Timestamp]
 	FROM Message M
 	WHERE M.conversation_id = @conversation_id
 GO
-
-SELECT * FROM ShowConversation(1)
