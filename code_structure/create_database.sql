@@ -15,6 +15,7 @@ CREATE TABLE Worker
      salary MONEY NOT NULL,
      employed_since DATETIME NOT NULL,
      position VARCHAR(64) NOT NULL,
+	 is_online BIT,
      CONSTRAINT WorkerPK PRIMARY KEY(user_id),
      CONSTRAINT WorkerFK FOREIGN KEY (user_id) REFERENCES "User"(id)
     )

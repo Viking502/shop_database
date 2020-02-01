@@ -2,15 +2,18 @@ INSERT INTO "User" (name, surname, email, password)
 VALUES
 ('Adam', 'Kowalski', 'adam123@gmail.com', '1111'),
 ('Kamil', 'Norwid', 'Norwid@gmail.com', 'cyprianek1234'),
-('Rafael', 'Kawiecki', 'rafkaw@gmail.com', 'zawa4321')
+('Rafael', 'Kawiecki', 'rafkaw@gmail.com', 'zawa4321'),
+('Michael', 'Orwat', 'Master@gmail.com', '4321')
 
 INSERT INTO Client (user_id, register_date, policy_accepted)
 VALUES
-(1, '02.12.2020', 1)
+(1, '02.12.2020', 1),
 (3, '03.12.2020', 1)
 
-INSERT INTO Worker (user_id, salary, employed_since, position)
-VALUES(2, 1000000, '02.12.2020', 'Poeta/Administrator')
+INSERT INTO Worker (user_id, salary, employed_since, position, is_online)
+VALUES
+(2, 1000000, '02.12.2020', 'Poeta/Administrator', 1),
+(4, 200000, '12.11.2020', 'Administrator', 0)
 
 INSERT INTO ConversationCategories (name, priority)
 VALUES('technical problems', 100)
@@ -26,8 +29,8 @@ VALUES('client', '...', '2020-01-29 12:36:17.297', 1)
 
 INSERT INTO Address (country, state, city, street, number, zip_code, user_id)
 VALUES
-('Poland', 'Malopolskie', 'Krakow', 'Lojasiewicza', 6, '30348', 1)
-('Poland', 'Mazowieckie', 'krakow', 'Lojasiewicza', 7, '30348', 1)
+('Poland', 'Malopolskie', 'Krakow', 'Lojasiewicza', 6, '30348', 1),
+('Poland', 'Mazowieckie', 'krakow', 'Lojasiewicza', 7, '30348', 1),
 ('Poland', 'Mazowieckie', 'Warszawa', 'Marszalkowska', 1108, '00026', 3)
 
 INSERT INTO Attachment (url, size, data_type, message_id)
