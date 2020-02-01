@@ -16,7 +16,8 @@ CREATE TABLE Worker
      employed_since DATETIME NOT NULL,
      position VARCHAR(64) NOT NULL,
      CONSTRAINT WorkerPK PRIMARY KEY(user_id),
-     CONSTRAINT WorkerFK FOREIGN KEY (user_id) REFERENCES "User"(id)
+     CONSTRAINT WorkerFK FOREIGN KEY (user_id) REFERENCES "User"(id),
+     CONSTRAINT WorkerSalary CHECK (salary > 0)
     )
 GO
 
