@@ -17,7 +17,7 @@ BEGIN
         RAISERROR('Adding new order failed.', 1, 1)
     END
     INSERT INTO OrderHistory
-    VALUES ('Order accepted', @date, @note, @@IDENTITY)
+    VALUES ('Started', @date, @note, @@IDENTITY)
     IF @@ERROR <> 0
     BEGIN
         RAISERROR('Adding new record to order history', 1, 1)
