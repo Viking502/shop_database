@@ -31,8 +31,7 @@ BEGIN
 		BEGIN
             DECLARE @limit INTEGER = (  SELECT PC.default_amount
                                         FROM ProductCategory PC
-                                        JOIN Product P on PC.id = P.category_id
-                                        WHERE P.id = @id)
+                                        WHERE PC.id = @category_id)
 		    DECLARE @percent FLOAT = (100 * @amount) / @limit
             DECLARE @value VARCHAR(32)
 
@@ -69,3 +68,4 @@ BEGIN
 	DEALLOCATE iterator
 END
 GO
+
