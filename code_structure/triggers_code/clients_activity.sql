@@ -8,8 +8,11 @@ AFTER INSERT
 AS
 BEGIN
     DECLARE iterator CURSOR
-		FOR SELECT inserted.id, order_id, quantity, product_id, price, client_id
-		    FROM inserted JOIN Product ON inserted.product_id = Product.id JOIN [Order] ON inserted.order_id = [Order].id
+		FOR SELECT inserted.id, inserted.order_id, inserted.quantity, inserted.product_id,
+		           Product.price, [Order].client_id
+		    FROM inserted
+            JOIN Product ON inserted.product_id = Product.id
+            JOIN [Order] ON inserted.order_id = [Order].id
     DECLARE @id INTEGER
     DECLARE @order_id INTEGER
     DECLARE @quantity INTEGER
