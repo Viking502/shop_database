@@ -6,7 +6,7 @@ VALUES
 
 INSERT INTO Client (user_id, register_date, policy_accepted)
 VALUES
-(1, '02.12.2020', 1)
+(1, '02.12.2020', 1),
 (3, '03.12.2020', 1)
 
 INSERT INTO Worker (user_id, salary, employed_since, position)
@@ -26,11 +26,12 @@ VALUES('client', '...', '2020-01-29 12:36:17.297', 1)
 
 INSERT INTO Address (country, state, city, street, number, zip_code, user_id)
 VALUES
-('Poland', 'Malopolskie', 'Krakow', 'Lojasiewicza', 6, '30348', 1)
-('Poland', 'Mazowieckie', 'krakow', 'Lojasiewicza', 7, '30348', 1)
+('Poland', 'Malopolskie', 'Krakow', 'Lojasiewicza', 6, '30348', 1),
+('Poland', 'Mazowieckie', 'krakow', 'Lojasiewicza', 7, '30348', 1),
 ('Poland', 'Mazowieckie', 'Warszawa', 'Marszalkowska', 1108, '00026', 3)
 
 INSERT INTO Attachment (url, size, data_type, message_id)
 VALUES
 ('www.funny_images.pl/image1', 262144, 'pdf', 1),
 ('www.funny_images.pl/image2', 16777216, 'gif', 1)
+
