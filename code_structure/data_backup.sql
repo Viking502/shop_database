@@ -37,3 +37,15 @@ INSERT INTO Attachment (url, size, data_type, message_id)
 VALUES
 ('www.funny_images.pl/image1', 262144, 'pdf', 1),
 ('www.funny_images.pl/image2', 16777216, 'gif', 1)
+
+INSERT INTO ProductCategory(name, default_amount, tax)
+VALUES
+('RTV', 15, 10)
+
+INSERT INTO ProductImage(name, path, width, height)
+VALUES
+('Plazma Funai', '/images/funai.jpg', 100, 100)
+
+INSERT INTO Product(name, category_id, image_id, price, amount, status)
+VALUES
+('Plazma Funai', 1, 1, 1000, 15, 'Full')

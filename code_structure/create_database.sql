@@ -83,6 +83,7 @@ CREATE TABLE ProductCategory
     (
      id INTEGER IDENTITY (1,1),
      name VARCHAR(64) NOT NULL,
+	 default_amount INTEGER NOT NULL,
      tax FLOAT NOT NULL,
      CONSTRAINT ProductCategoryPK PRIMARY KEY(id)
     )
@@ -105,7 +106,9 @@ CREATE TABLE Product
      name VARCHAR(64) NOT NULL,
      category_id INTEGER NOT NULL,
      image_id INTEGER NOT NULL,
-     price DECIMAL (10, 2) NOT NULL
+     price DECIMAL (10, 2) NOT NULL,
+	 amount INTEGER NOT NULL,
+	 status VARCHAR(32) NOT NULL,
      CONSTRAINT ProductPK PRIMARY KEY(id),
      CONSTRAINT ProductFKCategory FOREIGN KEY (category_id) REFERENCES ProductCategory(id),
      CONSTRAINT ProductFKImage FOREIGN KEY (image_id) REFERENCES ProductImage(id)
