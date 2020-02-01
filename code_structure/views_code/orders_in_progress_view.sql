@@ -20,7 +20,7 @@ AS
     )
 
     SELECT not_finalized_orders_last_ids.order_id, CONCAT(U.name, ' ', U.surname) as client_name,
-           status, O.date AS since_when
+           H.status, O.date AS since_when
     FROM not_finalized_orders_last_ids
         JOIN OrderHistory H on H.id = not_finalized_orders_last_ids.id
         JOIN [Order] O ON O.id = not_finalized_orders_last_ids.order_id
