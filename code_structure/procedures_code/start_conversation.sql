@@ -6,9 +6,9 @@ AS
 BEGIN
 
 	DECLARE @worker INTEGER = NULL
-	DECLARE @message VARCHAR(128) = 'Your conversation has been started'
+	DECLARE @message VARCHAR(256) = 'Your conversation has been started'
 
-	DECLARE @online_worker INTEGER = (SELECT TOP 1 user_id FROM Worker WHERE is_online = 1)
+	DECLARE @online_worker INTEGER = (SELECT TOP 1 user_id FROM Worker WHERE is_online = 1 ORDER BY NEWID())
 	IF @online_worker IS NOT NULL
 		BEGIN
 		SET @worker = @online_worker
@@ -16,7 +16,7 @@ BEGIN
 		END
 	ELSE
 		BEGIN
-		SET @worker = (SELECT TOP 1 user_id FROM Worker)
+		SET @worker = (SELECT TOP 1 user_id FROM Worker ORDER BY NEWID())
 		SET @message += ', but no administrator is online. Someone will respond for your problem soon'
 		END
 

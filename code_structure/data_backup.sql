@@ -7,13 +7,13 @@ VALUES
 
 INSERT INTO Client (user_id, register_date, policy_accepted)
 VALUES
-(1, '02.12.2020', 1),
-(3, '03.12.2020', 1)
+(1, '2020-02-01 19:12:08.573', 1),
+(3, '2020-01-30 20:13:08.573', 1)
 
 INSERT INTO Worker (user_id, salary, employed_since, position, is_online)
 VALUES
-(2, 1000000, '02.12.2020', 'Poeta/Administrator', 1),
-(4, 200000, '12.11.2020', 'Administrator', 0)
+(2, 1000000, '2020-01-29 19:12:08.573', 'Poeta/Administrator', 1),
+(4, 200000, '2020-02-01 12:12:08.573', 'Administrator', 0)
 
 INSERT INTO ConversationCategories (name, priority)
 VALUES('technical problems', 100)
