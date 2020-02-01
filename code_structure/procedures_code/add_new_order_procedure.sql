@@ -20,7 +20,7 @@ BEGIN
     VALUES ('Order accepted', @date, @note, @@IDENTITY)
     IF @@ERROR <> 0
     BEGIN
-        RAISERROR('Adding new record order history', 1, 1)
+        RAISERROR('Adding new record to order history', 1, 1)
     END
 END
 RETURN
