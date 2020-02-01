@@ -17,7 +17,8 @@ CREATE TABLE Worker
      position VARCHAR(64) NOT NULL,
 	 is_online BIT,
      CONSTRAINT WorkerPK PRIMARY KEY(user_id),
-     CONSTRAINT WorkerFK FOREIGN KEY (user_id) REFERENCES "User"(id)
+     CONSTRAINT WorkerFK FOREIGN KEY (user_id) REFERENCES "User"(id),
+     CONSTRAINT WorkerSalary CHECK (salary > 0)
     )
 GO
 
