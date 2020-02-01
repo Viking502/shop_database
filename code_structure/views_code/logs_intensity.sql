@@ -38,8 +38,6 @@ BEGIN
 	IF @dmy_flag & 1 = 1
 		BEGIN
 		SET @year = YEAR(@date)
-		IF @year < 1000
-			SET @result_date = @result_date + '000'
 		SET @result_date = @result_date + CONVERT(VARCHAR(4), @year)
 		END
 
