@@ -1,5 +1,5 @@
 IF OBJECT_ID('check_attachment', 'tr') IS NOT NULL
-	DROP TRIGGER check_attachemnt
+	DROP TRIGGER check_attachment
 GO
 CREATE TRIGGER check_attachment 
 ON [dbo].[Attachment] 
