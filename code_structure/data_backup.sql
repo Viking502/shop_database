@@ -13,10 +13,13 @@ INSERT INTO ConversationCategories (name, priority)
 VALUES('technical problems', 100)
 
 INSERT INTO Conversation (start_date, is_closed, category_id, user_id, worker_id)
-VALUES('01.01.2019', 0, 1, 1, 2)
+VALUES('14:30:02 01.01.2019', 0, 1, 1, 2)
 
 INSERT INTO Message (author_category, message, date, conversation_id)
-VALUES('client', 'Hello, I have a technical problem.', '04.02.2021', 1)
+VALUES('client', 'Hello, I have a technical problem.', '2020-01-29 12:28:17.297', 1)
+
+INSERT INTO Message (author_category, message, date, conversation_id)
+VALUES('client', '...', '2020-01-29 12:36:17.297', 1)
 
 INSERT INTO Attachment (url, size, data_type, message_id)
 VALUES
