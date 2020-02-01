@@ -44,8 +44,21 @@ VALUES
 
 INSERT INTO ProductImage(name, path, width, height)
 VALUES
-('Plazma Funai', '/images/funai.jpg', 100, 100)
+('Plazma Funai', '/images/funai.jpg', 100, 100),
+('HyperX Cloud Alpha HX-HSCA-RD/EM', '/images/Cloud_Alpha.jpg', 100, 100)
 
 INSERT INTO Product(name, category_id, image_id, price, amount, status)
 VALUES
-('Plazma Funai', 1, 1, 1000, 15, 'Full')
+('Plazma Funai', 1, 1, 1000, 15, 'Full'),
+('HyperX Cloud Alpha HX-HSCA-RD/EM', 1, 2, 250, 900, 'Full')
+
+INSERT INTO "Order"(date, payment_date, client_id)
+VALUES
+('2020-01-29 12:40:12.237', '2020-01-29 12:48:11.197', 1),
+('2020-01-30 23:15:12.231', '2020-02-01 09:49:12.127', 3)
+
+INSERT INTO OrderDetails(order_id, quantity, product_id)
+VALUES
+(1, 1, 1),
+(1, 20, 2),
+(2, 1, 2)
