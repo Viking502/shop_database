@@ -7,16 +7,20 @@ BEGIN
 
 WITH
 income as(
-	SELECT SUM(price * quantity) as orders
-	FROM Product AS pro
-	JOIN OrderDetails AS ord 
-		ON pro.id = ord.product_id
+	SELECT dbo.date_part(payment_date, 3) as "month", SUM(price * quantity) as orders
+	FROM Product AS p
+	JOIN OrderDetails AS od 
+		ON p.id = od.product_id
+	JOIN "Order" AS o
+		ON od.order_id = o.id
+	GROUP BY dbo.date_part(payment_date, 3)
 ),
 loss as(
-	SELECT SUM(salary) as salary FROM Worker
+	SELECT SUM(salary) as salary
+	FROM Worker
 )
 
-SELECT orders - salary
+SELECT "month", orders - salary
 FROM income, loss
 
 END
