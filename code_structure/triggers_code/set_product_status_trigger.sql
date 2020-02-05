@@ -3,20 +3,20 @@ GO
 
 CREATE TRIGGER update_product_status
 ON Product
-AFTER UPDATE
+AFTER INSERT, UPDATE
 AS
 BEGIN
     DECLARE iterator CURSOR
-		FOR SELECT inserted.id, inserted.category_id, inserted.amount, inserted.status FROM inserted
+		FOR SELECT inserted.id, inserted.category_id, inserted.amount
+		    FROM inserted
 
-	DECLARE @id INT
-	DECLARE @category_id INT
-    DECLARE @amount INT
-	DECLARE @status VARCHAR(32)
+    DECLARE @id INTEGER
+    DECLARE @category_id INTEGER
+    DECLARE @amount INTEGER
 
 	OPEN iterator
 
-	FETCH iterator INTO @id, @category_id, @amount, @status
+	FETCH iterator INTO @id, @category_id, @amount
 	WHILE @@FETCH_STATUS = 0
 	BEGIN
 		DECLARE @err_flag BIT = 0
@@ -61,7 +61,7 @@ BEGIN
 		    WHERE id = @id
         END
 
-		FETCH iterator INTO @id, @category_id, @amount, @status
+		FETCH iterator INTO @id, @category_id, @amount
 	END
 
 	CLOSE iterator

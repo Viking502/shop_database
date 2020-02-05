@@ -58,10 +58,10 @@ VALUES
 ('HyperX Cloud Alpha HX-HSCA-RD/EM', '/images/Cloud_Alpha.jpg', 100, 100)
 GO
 
-INSERT INTO Product(name, category_id, image_id, price, amount, status)
+INSERT INTO Product(name, category_id, image_id, price, amount)
 VALUES
-('Plazma Funai', 1, 1, 1000, 15, 'Full'),
-('HyperX Cloud Alpha HX-HSCA-RD/EM', 1, 2, 250, 900, 'Full')
+('Plazma Funai', 1, 1, 1000, 10),
+('HyperX Cloud Alpha HX-HSCA-RD/EM', 1, 2, 250, 900)
 GO
 
 INSERT INTO "Order"(date, payment_date, client_id)
