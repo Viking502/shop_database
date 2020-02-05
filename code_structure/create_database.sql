@@ -5,7 +5,8 @@ CREATE TABLE "User"
      surname VARCHAR(64) NOT NULL,
      email VARCHAR(64) NOT NULL,
      password VARCHAR(64) NOT NULL,
-     CONSTRAINT UserPK PRIMARY KEY(id)
+     CONSTRAINT UserPK PRIMARY KEY(id),
+     CONSTRAINT UserPasswordCheck CHECK (LEN(password) >= 8)
     )
 GO
 
@@ -18,7 +19,7 @@ CREATE TABLE Worker
 	 is_online BIT,
      CONSTRAINT WorkerPK PRIMARY KEY(user_id),
      CONSTRAINT WorkerFK FOREIGN KEY (user_id) REFERENCES "User"(id),
-     CONSTRAINT WorkerSalary CHECK (salary > 0)
+     CONSTRAINT WorkerSalaryCheck CHECK (salary > 1000)
     )
 GO
 
@@ -67,7 +68,9 @@ CREATE TABLE Address
      zip_code INTEGER NOT NULL,
      user_id INTEGER NOT NULL,
      CONSTRAINT AddressPK PRIMARY KEY(id),
-     CONSTRAINT AddressFK FOREIGN KEY(user_id) REFERENCES Client(user_id)
+     CONSTRAINT AddressFK FOREIGN KEY(user_id) REFERENCES Client(user_id),
+     CONSTRAINT AddressNumberCheck CHECK (number > 0),
+	 CONSTRAINT AddressFlatNumberCheck CHECK (flat_number > 0)
     )
 GO
 
@@ -86,7 +89,8 @@ CREATE TABLE ProductCategory
      name VARCHAR(64) NOT NULL,
 	 default_amount INTEGER NOT NULL,
      tax FLOAT NOT NULL,
-     CONSTRAINT ProductCategoryPK PRIMARY KEY(id)
+     CONSTRAINT ProductCategoryPK PRIMARY KEY(id),
+	 CONSTRAINT ProductCategoryDefaultAmountCheck CHECK (default_amount > 0)
     )
 GO
 
@@ -97,7 +101,9 @@ CREATE TABLE ProductImage
      path VARCHAR(128) NOT NULL,
      width INTEGER NOT NULL,
      height INTEGER NOT NULL,
-     CONSTRAINT ProductImagePK PRIMARY KEY (id)
+     CONSTRAINT ProductImagePK PRIMARY KEY (id),
+	 CONSTRAINT ProductImageWidthCheck CHECK (width > 0),
+	 CONSTRAINT ProductImageHeightCheck CHECK (height > 0)
     )
 GO
 
@@ -112,7 +118,8 @@ CREATE TABLE Product
 	 status VARCHAR(32),
      CONSTRAINT ProductPK PRIMARY KEY(id),
      CONSTRAINT ProductFKCategory FOREIGN KEY (category_id) REFERENCES ProductCategory(id),
-     CONSTRAINT ProductFKImage FOREIGN KEY (image_id) REFERENCES ProductImage(id)
+     CONSTRAINT ProductFKImage FOREIGN KEY (image_id) REFERENCES ProductImage(id),
+	 CONSTRAINT ProductPriceCheck CHECK (price > 0)
     )
 GO
 
@@ -147,7 +154,8 @@ CREATE TABLE OrderDetails
      product_id INTEGER NOT NULL,
 	 CONSTRAINT OrderDetailsPK PRIMARY KEY (id),
      CONSTRAINT OrderDetailsFKOrder FOREIGN KEY (order_id) REFERENCES "Order"(id),
-	 CONSTRAINT OrderDetailsFKProduct FOREIGN KEY (product_id) REFERENCES Product(id)
+	 CONSTRAINT OrderDetailsFKProduct FOREIGN KEY (product_id) REFERENCES Product(id),
+	 CONSTRAINT OrderDetailsQuantityCheck CHECK (quantity > 0)
     )
 GO
 
@@ -168,7 +176,8 @@ CREATE TABLE ConversationCategories
      id INTEGER IDENTITY (1,1),
      name VARCHAR(64) NOT NULL,
      priority INTEGER NOT NULL,
-     CONSTRAINT ConversationCategoriesPK PRIMARY KEY (id)
+     CONSTRAINT ConversationCategoriesPK PRIMARY KEY (id),
+	 CONSTRAINT ConversationCategoriesPriorityCheck CHECK (priority > 0)
     )
 GO
 
@@ -207,7 +216,8 @@ CREATE TABLE Attachment
      data_type VARCHAR(64),
      message_id INTEGER NOT NULL,
      CONSTRAINT AttachmentPK PRIMARY KEY (id),
-     CONSTRAINT AttachmentFK FOREIGN KEY (message_id) REFERENCES Message(id)
+     CONSTRAINT AttachmentFK FOREIGN KEY (message_id) REFERENCES Message(id),
+	 CONSTRAINT AttachmentSizeCheck CHECK (size > 0)
     )
 GO
 
