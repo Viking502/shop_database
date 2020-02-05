@@ -14,18 +14,20 @@ AS
 	DECLARE @position VARCHAR(64)
 	DECLARE @salary MONEY
 	
+	DECLARE @current_time DATETIME = CURRENT_TIMESTAMP
+
 	OPEN iterator
 	FETCH iterator INTO @worker_id, @position, @salary
 
 	WHILE @@FETCH_STATUS = 0
 	BEGIN
 		UPDATE WorkerHistory
-		SET valid_to = CURRENT_TIMESTAMP
+		SET valid_to = @current_time
 		WHERE worker_id = @worker_id 
 			AND valid_from = (SELECT MAX(valid_from) FROM WorkerHistory WHERE worker_id = @worker_id)
 
 		INSERT INTO WorkerHistory (position, salary, valid_from, worker_id)
-		VALUES (@position, @salary, CURRENT_TIMESTAMP, @worker_id)
+		VALUES (@position, @salary, @current_time, @worker_id)
 
 		FETCH iterator INTO @worker_id, @position, @salary
 	END
