@@ -220,3 +220,16 @@ CREATE TABLE Attachment
 	 CONSTRAINT AttachmentSizeCheck CHECK (size > 0)
     )
 GO
+
+CREATE TABLE WorkerHistory
+    (
+     id INTEGER IDENTITY (1,1),
+	 position VARCHAR(64) NOT NULL,
+	 salary MONEY NOT NULL,
+     valid_from DATETIME NOT NULL,
+     valid_to DATETIME,
+     worker_id INTEGER NOT NULL,
+     CONSTRAINT WorkerHistoryPK PRIMARY KEY (id),
+     CONSTRAINT WorkerHistoryFK FOREIGN KEY (worker_id) REFERENCES WORKER(user_id)
+    )
+GO
