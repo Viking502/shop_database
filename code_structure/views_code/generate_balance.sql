@@ -3,8 +3,6 @@ GO
 
 CREATE VIEW generate_balance
 AS
-BEGIN
-
 	WITH
 	income as
 	(
@@ -25,5 +23,4 @@ BEGIN
 	SELECT month, orders - salary
 	FROM income, loss
 
-END
 GO
