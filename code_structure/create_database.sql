@@ -18,7 +18,7 @@ CREATE TABLE Worker
      position VARCHAR(64) NOT NULL,
 	 is_online BIT,
      CONSTRAINT WorkerPK PRIMARY KEY(user_id),
-     CONSTRAINT WorkerFK FOREIGN KEY (user_id) REFERENCES "User"(id),
+     CONSTRAINT WorkerFK FOREIGN KEY (user_id) REFERENCES "User"(id) ON DELETE CASCADE,
      CONSTRAINT WorkerSalaryCheck CHECK (salary > 1000)
     )
 GO
@@ -29,7 +29,7 @@ CREATE TABLE Client
      register_date DATETIME NOT NULL,
      policy_accepted BIT NOT NULL,
      CONSTRAINT ClientPK PRIMARY KEY(user_id),
-     CONSTRAINT ClientFK FOREIGN KEY (user_id) REFERENCES "User"(id)
+     CONSTRAINT ClientFK FOREIGN KEY (user_id) REFERENCES "User"(id) ON DELETE CASCADE
     )
 GO
 
@@ -41,7 +41,7 @@ CREATE TABLE ClientLog
      message VARCHAR(512),
      client_id INTEGER NOT NULL,
      CONSTRAINT ClientLogPK PRIMARY KEY (id),
-     CONSTRAINT ClientLogFK FOREIGN KEY (client_id) REFERENCES Client(user_id)
+     CONSTRAINT ClientLogFK FOREIGN KEY (client_id) REFERENCES Client(user_id) ON DELETE CASCADE
     )
 GO
 
@@ -52,7 +52,7 @@ CREATE TABLE ClientActivity
      total_expenses MONEY NOT NULL,
      client_id INTEGER NOT NULL,
      CONSTRAINT ClientActivityPK PRIMARY KEY (id),
-     CONSTRAINT ClientActivityFK FOREIGN KEY (client_id) REFERENCES Client(user_id)
+     CONSTRAINT ClientActivityFK FOREIGN KEY (client_id) REFERENCES Client(user_id) ON DELETE CASCADE
     )
 GO
 
@@ -68,7 +68,7 @@ CREATE TABLE Address
      zip_code INTEGER NOT NULL,
      user_id INTEGER NOT NULL,
      CONSTRAINT AddressPK PRIMARY KEY(id),
-     CONSTRAINT AddressFK FOREIGN KEY(user_id) REFERENCES Client(user_id),
+     CONSTRAINT AddressFK FOREIGN KEY(user_id) REFERENCES Client(user_id) ON DELETE CASCADE,
      CONSTRAINT AddressNumberCheck CHECK (number > 0),
 	 CONSTRAINT AddressFlatNumberCheck CHECK (flat_number > 0)
     )
@@ -118,7 +118,7 @@ CREATE TABLE Product
 	 status VARCHAR(32),
      CONSTRAINT ProductPK PRIMARY KEY(id),
      CONSTRAINT ProductFKCategory FOREIGN KEY (category_id) REFERENCES ProductCategory(id),
-     CONSTRAINT ProductFKImage FOREIGN KEY (image_id) REFERENCES ProductImage(id),
+     CONSTRAINT ProductFKImage FOREIGN KEY (image_id) REFERENCES ProductImage(id) ON UPDATE CASCADE,
 	 CONSTRAINT ProductPriceCheck CHECK (price > 0)
     )
 GO
@@ -131,7 +131,7 @@ CREATE TABLE ProductPrice
      valid_to DATETIME,
      product_id INTEGER NOT NULL,
      CONSTRAINT ProductPricePK PRIMARY KEY (id),
-     CONSTRAINT ProductPriceFK FOREIGN KEY (product_id) REFERENCES Product(id)
+     CONSTRAINT ProductPriceFK FOREIGN KEY (product_id) REFERENCES Product(id) ON DELETE CASCADE
     )
 GO
 
@@ -142,7 +142,7 @@ CREATE TABLE "Order"
      payment_date DATETIME,
 	 client_id INTEGER NOT NULL,
      CONSTRAINT OrderPK PRIMARY KEY (id),
-	 CONSTRAINT OrderFKClient FOREIGN KEY (client_id) REFERENCES Client(user_id)
+	 CONSTRAINT OrderFKClient FOREIGN KEY (client_id) REFERENCES Client(user_id) ON DELETE CASCADE
     )
 GO
 
@@ -153,7 +153,7 @@ CREATE TABLE OrderDetails
 	 quantity INTEGER NOT NULL,
      product_id INTEGER NOT NULL,
 	 CONSTRAINT OrderDetailsPK PRIMARY KEY (id),
-     CONSTRAINT OrderDetailsFKOrder FOREIGN KEY (order_id) REFERENCES "Order"(id),
+     CONSTRAINT OrderDetailsFKOrder FOREIGN KEY (order_id) REFERENCES "Order"(id) ON DELETE CASCADE,
 	 CONSTRAINT OrderDetailsFKProduct FOREIGN KEY (product_id) REFERENCES Product(id),
 	 CONSTRAINT OrderDetailsQuantityCheck CHECK (quantity > 0)
     )
@@ -167,7 +167,7 @@ CREATE TABLE OrderHistory
      note VARCHAR(512),
      order_id INTEGER NOT NULL,
      CONSTRAINT OrderHistoryPK PRIMARY KEY (id),
-     CONSTRAINT OrderHistoryFK FOREIGN KEY (order_id) REFERENCES "Order"(id)
+     CONSTRAINT OrderHistoryFK FOREIGN KEY (order_id) REFERENCES "Order"(id) ON DELETE CASCADE
     )
 GO
 
@@ -190,9 +190,9 @@ CREATE TABLE Conversation
      user_id INTEGER NOT NULL,
      worker_id INTEGER NOT NULL,
      CONSTRAINT ConversationPK PRIMARY KEY(id),
-     CONSTRAINT ConversationFKClient FOREIGN KEY (user_id) REFERENCES Client(user_id),
+     CONSTRAINT ConversationFKClient FOREIGN KEY (user_id) REFERENCES Client(user_id) ON DELETE CASCADE,
      CONSTRAINT ConversationFKWorker FOREIGN KEY (worker_id) REFERENCES Worker(user_id),
-	 CONSTRAINT ConversationFKCategory FOREIGN KEY (category_id) REFERENCES ConversationCategories(id)
+	 CONSTRAINT ConversationFKCategory FOREIGN KEY (category_id) REFERENCES ConversationCategories(id) ON UPDATE CASCADE
     )
 GO
 
@@ -204,7 +204,7 @@ CREATE TABLE Message
      date DATETIME NOT NULL,
      conversation_id INTEGER NOT NULL
      CONSTRAINT MessagePK PRIMARY KEY (id),
-     CONSTRAINT MessageFK FOREIGN KEY (conversation_id) REFERENCES Conversation(id)
+     CONSTRAINT MessageFK FOREIGN KEY (conversation_id) REFERENCES Conversation(id) ON DELETE CASCADE
     )
 GO
 
@@ -216,7 +216,7 @@ CREATE TABLE Attachment
      data_type VARCHAR(64),
      message_id INTEGER NOT NULL,
      CONSTRAINT AttachmentPK PRIMARY KEY (id),
-     CONSTRAINT AttachmentFK FOREIGN KEY (message_id) REFERENCES Message(id),
+     CONSTRAINT AttachmentFK FOREIGN KEY (message_id) REFERENCES Message(id) ON DELETE CASCADE,
 	 CONSTRAINT AttachmentSizeCheck CHECK (size > 0)
     )
 GO
