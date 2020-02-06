@@ -1,7 +1,7 @@
-DROP FUNCTION IF EXISTS ClientsPerYear
+DROP FUNCTION IF EXISTS clients_per_year
 GO
 
-CREATE FUNCTION ClientsPerYear
+CREATE FUNCTION clients_per_year
 (
         @year INTEGER
 )
