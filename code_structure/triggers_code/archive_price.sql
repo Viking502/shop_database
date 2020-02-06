@@ -1,26 +1,24 @@
-IF OBJECT_ID('LastPriceExpirationDate', 'fn') IS NOT NULL
-	DROP FUNCTION LastPriceExpirationDate
+DROP FUNCTION IF EXISTS last_price_expiration_date
 GO
 
-CREATE FUNCTION LastPriceExpirationDate ()
+CREATE FUNCTION last_price_expiration_date ()
 RETURNS DATETIME
 AS
 BEGIN
-    DECLARE @Result DATETIME
+    DECLARE @result DATETIME
     IF NOT EXISTS (SELECT * FROM ProductPrice)
     BEGIN
-        SET @Result = GETDATE()
+        SET @result = GETDATE()
     END
     ELSE
     BEGIN
-        SET @Result = (SELECT MAX(valid_to) FROM ProductPrice)
+        SET @result = (SELECT MAX(valid_to) FROM ProductPrice)
     END
-    RETURN @Result
+    RETURN @result
 END
 GO
 
-IF OBJECT_ID('archive_price', 'tr') IS NOT NULL
-	DROP TRIGGER archive_price
+DROP TRIGGER IF EXISTS archive_price
 GO
 
 CREATE TRIGGER archive_price
@@ -29,7 +27,8 @@ AFTER UPDATE
 AS
     BEGIN
         INSERT INTO ProductPrice(price, valid_from, valid_to, product_id)
-        SELECT price, (SELECT dbo.[LastPriceExpirationDate]()), GETDATE(), id
-        FROM DELETED
+        SELECT price, (SELECT dbo.[last_price_expiration_date]()), GETDATE(), id
+        FROM deleted
     END
+GO
 

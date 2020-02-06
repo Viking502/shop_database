@@ -1,7 +1,7 @@
-DROP PROCEDURE IF EXISTS AddWorker
+DROP PROCEDURE IF EXISTS add_worker
 GO
 
-CREATE PROCEDURE AddWorker
+CREATE PROCEDURE add_worker
 (
     @name VARCHAR(64),
     @surname VARCHAR(64),
@@ -16,7 +16,7 @@ BEGIN
     INSERT INTO [User] (name, surname, email, password)
     VALUES (@name, @surname, @email, @password)
 
-    INSERT INTO [Worker] (user_id, salary, employed_since, position)
+    INSERT INTO Worker (user_id, salary, employed_since, position)
     VALUES (@@IDENTITY, @salary, @employed_since, @position)
 END
 GO

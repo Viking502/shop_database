@@ -1,6 +1,6 @@
-IF OBJECT_ID('auto_response') IS NOT NULL
-	DROP TRIGGER auto_response
+DROP TRIGGER IF EXISTS auto_response
 GO
+
 CREATE TRIGGER auto_response
 ON Message
 AFTER INSERT
@@ -11,5 +11,5 @@ AS
 
 	IF DATEDIFF(DAY, @last_msg, CURRENT_TIMESTAMP) > 1 OR @last_msg IS NULL
 		INSERT INTO Message (author_category, message, date, conversation_id)
-		VALUES('Bot', 'Hello, our consultant will contact you as soon as possible.', CURRENT_TIMESTAMP, @conversation)
+		VALUES ('Bot', 'Hello, our consultant will contact you as soon as possible.', CURRENT_TIMESTAMP, @conversation)
 GO

@@ -1,7 +1,7 @@
-DROP PROCEDURE IF EXISTS RegisterClient
+DROP PROCEDURE IF EXISTS register_client
 GO
 
-CREATE PROCEDURE RegisterClient
+CREATE PROCEDURE register_client
 (
     @name VARCHAR(64),
     @surname VARCHAR(64),
@@ -17,12 +17,12 @@ BEGIN
         INSERT INTO [User] (name, surname, email, password)
         VALUES (@name, @surname, @email, @password)
 
-        INSERT INTO [Client] (user_id, register_date, policy_accepted)
+        INSERT INTO Client (user_id, register_date, policy_accepted)
         VALUES (@@IDENTITY, @register_date, @policy_accepted)
     END
     ELSE
     BEGIN
-       RAISERROR ('Policy not accepted', 16, 1)
+       RAISERROR('Policy not accepted', 16, 1)
     END
 END
 GO

@@ -1,7 +1,11 @@
-IF OBJECT_ID('start_conversation') IS NOT NULL
-	DROP PROCEDURE start_conversation
+DROP PROCEDURE IF EXISTS start_conversation
 GO
-CREATE PROCEDURE start_conversation(@user_id INTEGER, @category_id INTEGER)
+
+CREATE PROCEDURE start_conversation
+(
+    @user_id INTEGER,
+    @category_id INTEGER
+)
 AS
 BEGIN
 
@@ -10,21 +14,21 @@ BEGIN
 
 	DECLARE @online_worker INTEGER = (SELECT TOP 1 user_id FROM Worker WHERE is_online = 1 ORDER BY NEWID())
 	IF @online_worker IS NOT NULL
-		BEGIN
+	BEGIN
 		SET @worker = @online_worker
 		SET @message += ' and one of our consultant will respond you shortly'
-		END
+	END
 	ELSE
-		BEGIN
+	BEGIN
 		SET @worker = (SELECT TOP 1 user_id FROM Worker ORDER BY NEWID())
 		SET @message += ', but no administrator is online. Someone will respond for your problem soon'
-		END
+	END
 
 	INSERT INTO Conversation (start_date, is_closed, category_id, user_id, worker_id)
-	VALUES(CURRENT_TIMESTAMP, 0, @category_id, @user_id, @worker)
+	VALUES (CURRENT_TIMESTAMP, 0, @category_id, @user_id, @worker)
 
 	INSERT INTO Message (author_category, message, date, conversation_id)
-	VALUES('Bot', @message, CURRENT_TIMESTAMP, @@IDENTITY)
+	VALUES ('Bot', @message, CURRENT_TIMESTAMP, @@IDENTITY)
 
 END
 GO
