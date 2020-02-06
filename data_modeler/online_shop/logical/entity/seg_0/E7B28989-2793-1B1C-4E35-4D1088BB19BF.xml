@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E7B28989-2793-1B1C-4E35-4D1088BB19BF" name="Transaction">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E7B28989-2793-1B1C-4E35-4D1088BB19BF" name="Order">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-06 15:31:58 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>

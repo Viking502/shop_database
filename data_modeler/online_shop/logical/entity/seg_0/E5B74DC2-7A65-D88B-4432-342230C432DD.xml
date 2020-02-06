@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E5B74DC2-7A65-D88B-4432-342230C432DD" name="user_activity">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E5B74DC2-7A65-D88B-4432-342230C432DD" name="ClientActivity">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-11 15:01:52 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
@@ -37,18 +37,6 @@
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="last_login" id="0DA3268B-4D2A-E615-E1D8-33F2C1ED30C3">
-<createdBy>viking</createdBy>
-<createdTime>2020-01-11 15:03:43 UTC</createdTime>
-<ownerDesignName>online_shop</ownerDesignName>
-<engineerTo>
-<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
-</engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<domain>4272F224-5F7E-90F1-F7F2-9661CE8A5F16</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="total_expences" id="099FD1A7-A030-A463-344F-4EC24DABDCD4">

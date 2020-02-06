@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F21D4289-FD86-40EC-FBEF-6EABD6D34FD2" name="Product_category">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F21D4289-FD86-40EC-FBEF-6EABD6D34FD2" name="ProductCategory">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-06 16:01:48 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
@@ -37,6 +37,18 @@
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="default_amount" id="B61C73E4-635F-0A72-627F-1186CD43E128">
+<createdBy>viking</createdBy>
+<createdTime>2020-02-06 11:07:54 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="tax" id="30123BCB-80DF-09EF-C641-994DD8441074">
