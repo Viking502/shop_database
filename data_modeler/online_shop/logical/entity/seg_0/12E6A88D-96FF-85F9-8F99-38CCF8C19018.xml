@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="12E6A88D-96FF-85F9-8F99-38CCF8C19018" name="user_logs">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="12E6A88D-96FF-85F9-8F99-38CCF8C19018" name="ClientLogs">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-11 14:59:57 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>

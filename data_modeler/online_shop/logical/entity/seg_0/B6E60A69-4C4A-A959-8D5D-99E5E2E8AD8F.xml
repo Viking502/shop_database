@@ -51,6 +51,18 @@
 <domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="city" id="6F05FB90-14C5-1735-B188-4D275DD1D364">
+<createdBy>viking</createdBy>
+<createdTime>2020-02-06 11:18:58 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>155C020A-5753-3228-DCF3-EFE82B408928</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="street" id="9C091468-7CFD-BBC5-828F-7282FC87282F">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-06 16:15:50 UTC</createdTime>
@@ -96,20 +108,6 @@
 <engineerTo>
 <item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
 </engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id1" id="5C7525FD-5F62-1547-390A-11805F0CC61C">
-<createdBy>viking</createdBy>
-<createdTime>2020-01-11 15:26:19 UTC</createdTime>
-<generatorID>578C6477-3A17-1618-B731-CE67CAF244B8</generatorID>
-<ownerDesignName>online_shop</ownerDesignName>
-<engineerTo>
-<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
-</engineerTo>
-<referedAttribute>77075B66-5ED5-464F-FA05-8FE4F495BCB1</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>

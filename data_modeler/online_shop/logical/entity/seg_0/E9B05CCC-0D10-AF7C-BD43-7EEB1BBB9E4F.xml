@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E9B05CCC-0D10-AF7C-BD43-7EEB1BBB9E4F" name="Product_price">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E9B05CCC-0D10-AF7C-BD43-7EEB1BBB9E4F" name="ProductPrice">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-06 15:28:57 UTC</createdTime>
 <ownerDesignName>online_shop</ownerDesignName>
@@ -15,6 +15,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="087CB7C9-6D94-1C47-1D0E-DEE285C2FE1C">
+<createdBy>viking</createdBy>
+<createdTime>2020-02-06 12:26:21 UTC</createdTime>
+<ownerDesignName>online_shop</ownerDesignName>
+<engineerTo>
+<item key="8BE7D60B-1C4B-8104-4271-88FF7CCCC8DD" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BBD81238-F321-3E9F-A826-93FEF0D73652</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="price" id="CC56405F-3A4B-CE54-FCCE-10A187476C90">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-06 15:29:26 UTC</createdTime>
@@ -52,7 +64,7 @@
 <domain>4272F224-5F7E-90F1-F7F2-9661CE8A5F16</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id" id="FC432458-CE8B-5D9E-C683-EAD23FF09C5B">
+<Attribute name="id_3" id="FC432458-CE8B-5D9E-C683-EAD23FF09C5B">
 <createdBy>viking</createdBy>
 <createdTime>2020-01-11 15:23:20 UTC</createdTime>
 <generatorID>868B44AA-89C2-48C3-3908-799A0C266A89</generatorID>
@@ -91,8 +103,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>FC432458-CE8B-5D9E-C683-EAD23FF09C5B</attributeRef>
-<attributeRef>C47B2F6E-9CEA-AFE4-2A87-20CB6A4D9293</attributeRef>
+<attributeRef>087CB7C9-6D94-1C47-1D0E-DEE285C2FE1C</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
