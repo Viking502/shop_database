@@ -1,5 +1,4 @@
-IF OBJECT_ID('archive_worker_status') IS NOT NULL
- DROP TRIGGER archive_worker_status
+DROP TRIGGER IF EXISTS archive_worker_status
 GO
 
 CREATE TRIGGER archive_worker_status

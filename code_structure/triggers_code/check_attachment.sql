@@ -1,6 +1,6 @@
-IF OBJECT_ID('check_attachment', 'tr') IS NOT NULL
-	DROP TRIGGER check_attachment
+DROP TRIGGER IF EXISTS check_attachment
 GO
+
 CREATE TRIGGER check_attachment 
 ON [dbo].[Attachment] 
 INSTEAD OF INSERT
@@ -22,7 +22,7 @@ AS
 
 		DECLARE @err_flag BIT = 0
 
-		IF (UPPER(@data_type) NOT IN('JPG', 'PNG', 'GIF', 'PDF'))
+		IF UPPER(@data_type) NOT IN('JPG', 'PNG', 'GIF', 'PDF')
 		BEGIN
 			RAISERROR('Data type %s is not supported', 16, 1, @data_type)
 			SET @err_flag = 1
@@ -40,7 +40,7 @@ AS
 
 		IF @err_flag = 0
 			INSERT INTO Attachment (url, size, data_type, message_id)
-			VALUES(@url, @size, @data_type, @msg_id)
+			VALUES (@url, @size, @data_type, @msg_id)
 
 		FETCH iterator INTO @id, @url, @size, @data_type, @msg_id
 	END

@@ -1,5 +1,4 @@
-IF OBJECT_ID('clients_activity', 'tr') IS NOT NULL
-	DROP TRIGGER clients_activity
+DROP TRIGGER IF EXISTS clients_activity
 GO
 
 CREATE TRIGGER clients_activity
