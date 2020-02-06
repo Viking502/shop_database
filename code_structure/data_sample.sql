@@ -64,10 +64,10 @@ VALUES
 ('HyperX Cloud Alpha HX-HSCA-RD/EM', 1, 2, 250, 900)
 GO
 
-INSERT INTO "Order"(date, payment_date, client_id)
-VALUES
-('2020-01-29 12:40:12.237', '2020-01-29 12:48:11.197', 1),
-('2020-01-30 23:15:12.231', '2020-02-01 09:49:12.127', 3)
+EXEC add_new_order 1, ''
+GO
+
+EXEC add_new_order 3, ''
 GO
 
 INSERT INTO OrderDetails(order_id, quantity, product_id)
