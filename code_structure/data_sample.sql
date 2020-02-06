@@ -1,9 +1,9 @@
 INSERT INTO "User" (name, surname, email, password)
 VALUES
-('Adam', 'Kowalski', 'adam123@gmail.com', '1111'),
+('Adam', 'Kowalski', 'adam123@gmail.com', '1111111'),
 ('Kamil', 'Norwid', 'Norwid@gmail.com', 'cyprianek1234'),
 ('Rafael', 'Kawiecki', 'rafkaw@gmail.com', 'zawa4321'),
-('Michael', 'Orwat', 'Master@gmail.com', '4321')
+('Michael', 'Orwat', 'Master@gmail.com', '43211234')
 GO
 
 INSERT INTO Client (user_id, register_date, policy_accepted)
